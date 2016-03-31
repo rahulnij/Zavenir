@@ -25,9 +25,9 @@ if ($err) {
 	echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
 }
 
-$client->setUseCurl($useCURL);
+$client->setUseCURL(true);
 $client->loadWSDL();
-$client->setCredentials("TRIDENTDELHI\souhardya.chowdhury", "pass@321", 'digest');
+$client->setCredentials("TRIDENTDELHI\souhardya.chowdhury", "pass@321", 'ntlm');
 
 $data = array('entity'=>array(
 'Attributes' => array(
@@ -41,10 +41,12 @@ $data = array('entity'=>array(
 )
 
 );
+$xmldata = '<create><entity xsi:type="lead"></create>';
 
-$retrie = array( 'entityName' => 'lead', 'id' => 100);
-//$result = $client->call('Retrieve', $retrie);
-$result = $client->call('Create', $data);
+$retrie = '<entityName>lead</entityName>'.
+				'<id>100</id>';
+//$result = $client->call('', $retrie);
+$result = $client->call('Create', $xmldata);
 // Check for a fault
 if ($client->fault) {
 	echo '<h2>Fault</h2><pre>';
