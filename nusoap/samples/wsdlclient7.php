@@ -41,7 +41,15 @@ $data = array('entity'=>array(
 )
 
 );
-$xmldata = '<create><entity xsi:type="lead"></create>';
+$xmldata = '<create><entity xsi:type="lead">
+	<new_salutation>Mr</new_salutation>
+	<fullname>Rahul</fullname>
+	<companyname>C</companyname>
+	<emailaddress1>r@gmail.com</emailaddress1>
+	<new_place>place</new_place>
+	<mobilephone>9213190999</mobilephone>
+	<telephone1>2123456789</telephone1>
+	<subject>subject</subject></entity></create>';
 
 $retrie = '<entityName>lead</entityName>'.
 				'<id>100</id>';
