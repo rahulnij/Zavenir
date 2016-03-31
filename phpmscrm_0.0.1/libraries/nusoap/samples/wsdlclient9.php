@@ -1,6 +1,6 @@
 <?php
 /*
- *	$Id: wsdlclient7.php,v 1.2 2007/11/06 14:49:10 snichol Exp $
+ *	$Id: wsdlclient9.php,v 1.2 2007/11/06 14:50:06 snichol Exp $
  *
  *	WSDL client sample.
  *
@@ -14,37 +14,31 @@ $proxyhost = isset($_POST['proxyhost']) ? $_POST['proxyhost'] : '';
 $proxyport = isset($_POST['proxyport']) ? $_POST['proxyport'] : '';
 $proxyusername = isset($_POST['proxyusername']) ? $_POST['proxyusername'] : '';
 $proxypassword = isset($_POST['proxypassword']) ? $_POST['proxypassword'] : '';
-$useCURL = isset($_POST['usecurl']) ? $_POST['usecurl'] : '0';
-#echo 'You must set your username and password in the source';
-#exit();
-$client = new nusoap_client("http://180.151.86.86/Zavenir/XRMServices/2011/Organization.svc?singleWsdl", 'wsdl',
+echo 'You must set your username and password in the source';
+exit();
+$client = new nusoap_client("http://staging.mappoint.net/standard-30/mappoint.wsdl", 'wsdl',
 						$proxyhost, $proxyport, $proxyusername, $proxypassword);
-$client->soap_defencoding = 'UTF-8';
 $err = $client->getError();
 if ($err) {
 	echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
 }
-
-$client->setUseCurl($useCURL);
-$client->loadWSDL();
-$client->setCredentials("TRIDENTDELHI\souhardya.chowdhury", "pass@321", 'digest');
-
-$data = array('entity'=>array(
-'Attributes' => array(
-			'KeyValuePairOfstringanyType' => array('key'=>'new_salutation','value'=>'Mr')
-), //tns:AttributeCollection
-//'EntityState' => 'Lead', //tns:EntityState
-'FormattedValues' => array(),//tns:FormattedValueCollection
-'Id' => '',//ser:guid
-'LogicalName' => '',//xs:string
-'RelatedEntities' => array()//tns:RelatedEntityCollection
-)
-
+$client->setCredentials($username, $password, 'digest');
+$client->useHTTPPersistentConnection();
+$view = array(
+	'Height' => 200,
+	'Width' => 300,
+	'CenterPoint' => array(
+		'Latitude' => 40,
+		'Longitude' => -120
+	)
 );
-
-$retrie = array( 'entityName' => 'lead', 'id' => 100);
-//$result = $client->call('Retrieve', $retrie);
-$result = $client->call('Create', $data);
+$myViews[] = new soapval('MapView', 'ViewByHeightWidth', $view, false, 'http://s.mappoint.net/mappoint-30/');
+$mapSpec = array(
+	'DataSourceName' => "MapPoint.NA",
+	'Views' => array('MapView' => $myViews)
+);
+$map = array('specification' => $mapSpec);
+$result = $client->call('GetMap', array('parameters' => $map));
 // Check for a fault
 if ($client->fault) {
 	echo '<h2>Fault</h2><pre>';

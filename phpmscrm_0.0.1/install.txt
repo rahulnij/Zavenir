@@ -1,0 +1,47 @@
+**************************************************************************************
+* PHPMSCRM
+*
+* Copyright (c) 2010 PHPMSCRM
+*
+* This library is free software; you can redistribute it and/or
+* modify it under the terms of the GNU Lesser General Public
+* License as published by the Free Software Foundation; either
+* version 2.1 of the License, or (at your option) any later version.
+* 
+* This library is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* Lesser General Public License for more details.
+* 
+* You should have received a copy of the GNU Lesser General Public
+* License along with this library; if not, write to the Free Software
+* Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+*
+* @copyright  Copyright (c) 2010 PHPMSCRM (http://phpmscrm.codeplex.com/)
+* @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
+* @version    0.0.1, 2010-08-20
+**************************************************************************************
+
+Requirements
+------------
+
+The following requirements should be met prior to using PHPMSCRM:
+* PHP version 5.2.0 or higher
+* PHP extension php_curl enabled (For the NUSOAP library to be able to fetch the CRM Web Service)
+* PHP extension php_ldap enabled (If Active Directory authentication is used)
+
+
+Installation instructions
+-------------------------
+
+Copy the contents of zip archive to any location in your application required. 
+Create the MySQL database using the setup_db.sql script.
+Update the config.inc.php file for your case.
+Create a mysql user with the newmysqluser.php script (http://phpmscrm/newmysqluser.php)
+
+
+Getting started
+---------------
+
+A good way to get started is to go through the already created Views and Forms.
+Create / modify / delete entries to see how it works.

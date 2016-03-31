@@ -15,36 +15,25 @@ $proxyport = isset($_POST['proxyport']) ? $_POST['proxyport'] : '';
 $proxyusername = isset($_POST['proxyusername']) ? $_POST['proxyusername'] : '';
 $proxypassword = isset($_POST['proxypassword']) ? $_POST['proxypassword'] : '';
 $useCURL = isset($_POST['usecurl']) ? $_POST['usecurl'] : '0';
-#echo 'You must set your username and password in the source';
-#exit();
-$client = new nusoap_client("http://180.151.86.86/Zavenir/XRMServices/2011/Organization.svc?singleWsdl", 'wsdl',
+//echo 'You must set your username and password in the source';
+//exit();
+
+$username = 'EUROPE\zivanov';
+$password = 'izoranco';
+
+//$client = new nusoap_client("http://staging.mappoint.net/standard-30/mappoint.wsdl", 'wsdl',
+//						$proxyhost, $proxyport, $proxyusername, $proxypassword);
+$client = new nusoap_client("http://newserver2003/mscrmservices/2007/CrmServiceWsdl.aspx?uniquename=CRM2", 'wsdl',
 						$proxyhost, $proxyport, $proxyusername, $proxypassword);
-$client->soap_defencoding = 'UTF-8';
+
 $err = $client->getError();
 if ($err) {
 	echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
 }
-
 $client->setUseCurl($useCURL);
 $client->loadWSDL();
-$client->setCredentials("TRIDENTDELHI\souhardya.chowdhury", "pass@321", 'digest');
-
-$data = array('entity'=>array(
-'Attributes' => array(
-			'KeyValuePairOfstringanyType' => array('key'=>'new_salutation','value'=>'Mr')
-), //tns:AttributeCollection
-//'EntityState' => 'Lead', //tns:EntityState
-'FormattedValues' => array(),//tns:FormattedValueCollection
-'Id' => '',//ser:guid
-'LogicalName' => '',//xs:string
-'RelatedEntities' => array()//tns:RelatedEntityCollection
-)
-
-);
-
-$retrie = array( 'entityName' => 'lead', 'id' => 100);
-//$result = $client->call('Retrieve', $retrie);
-$result = $client->call('Create', $data);
+$client->setCredentials($username, $password);
+$result = $client->call('GetVersionInfo', array());
 // Check for a fault
 if ($client->fault) {
 	echo '<h2>Fault</h2><pre>';

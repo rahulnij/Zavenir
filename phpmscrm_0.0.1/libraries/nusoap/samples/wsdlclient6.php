@@ -1,50 +1,47 @@
 <?php
 /*
- *	$Id: wsdlclient7.php,v 1.2 2007/11/06 14:49:10 snichol Exp $
+ *	$Id: wsdlclient6.php,v 1.1 2004/01/26 07:15:20 snichol Exp $
  *
  *	WSDL client sample.
  *
  *	Service: WSDL
- *	Payload: document/literal
+ *	Payload: rpc/encoded
  *	Transport: http
- *	Authentication: digest
+ *	Authentication: none
  */
 require_once('../lib/nusoap.php');
 $proxyhost = isset($_POST['proxyhost']) ? $_POST['proxyhost'] : '';
 $proxyport = isset($_POST['proxyport']) ? $_POST['proxyport'] : '';
 $proxyusername = isset($_POST['proxyusername']) ? $_POST['proxyusername'] : '';
 $proxypassword = isset($_POST['proxypassword']) ? $_POST['proxypassword'] : '';
-$useCURL = isset($_POST['usecurl']) ? $_POST['usecurl'] : '0';
-#echo 'You must set your username and password in the source';
-#exit();
-$client = new nusoap_client("http://180.151.86.86/Zavenir/XRMServices/2011/Organization.svc?singleWsdl", 'wsdl',
+echo 'You must change the source code to specify the location of the WSDL!'; exit();
+$client = new soapclient('file://f:/googleapi/GoogleSearch.wsdl', true,
 						$proxyhost, $proxyport, $proxyusername, $proxypassword);
-$client->soap_defencoding = 'UTF-8';
 $err = $client->getError();
 if ($err) {
 	echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
 }
+$client->soap_defencoding = 'UTF-8';
 
-$client->setUseCurl($useCURL);
-$client->loadWSDL();
-$client->setCredentials("TRIDENTDELHI\souhardya.chowdhury", "pass@321", 'digest');
+echo 'You must set your own Google key in the source code to run this client!'; exit();
+$key = 'set your own Google key';
+$q = '"Lies and the Lying"';
+$start = 1;
+$maxResults = 10;
+$filter = false;
+$restrict = '';
+$safeSearch = false;
+$lr = '';
+$ie = '';
+$oe = '';
 
-$data = array('entity'=>array(
-'Attributes' => array(
-			'KeyValuePairOfstringanyType' => array('key'=>'new_salutation','value'=>'Mr')
-), //tns:AttributeCollection
-//'EntityState' => 'Lead', //tns:EntityState
-'FormattedValues' => array(),//tns:FormattedValueCollection
-'Id' => '',//ser:guid
-'LogicalName' => '',//xs:string
-'RelatedEntities' => array()//tns:RelatedEntityCollection
-)
+$params = array(
+	'key' => $key, 'q' => $q, 'start' => $start, 'maxResults' => $maxResults,
+	'filter' => $filter, 'restrict' => $restrict, 'safeSearch' => $safeSearch, 'lr' => $lr,
+	'ie' => $ie, 'oe' => $oe
+	);
 
-);
-
-$retrie = array( 'entityName' => 'lead', 'id' => 100);
-//$result = $client->call('Retrieve', $retrie);
-$result = $client->call('Create', $data);
+$result = $client->call('doGoogleSearch', $params);
 // Check for a fault
 if ($client->fault) {
 	echo '<h2>Fault</h2><pre>';

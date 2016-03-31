@@ -1,13 +1,14 @@
 <?php
 /*
- *	$Id: wsdlclient7.php,v 1.2 2007/11/06 14:49:10 snichol Exp $
+ *	$Id: wsdlclient10.php,v 1.2 2007/04/13 14:22:09 snichol Exp $
  *
  *	WSDL client sample.
+ *	Demonstrates de-serialization of a document/literal array (added nusoap.php 1.73).
  *
  *	Service: WSDL
  *	Payload: document/literal
  *	Transport: http
- *	Authentication: digest
+ *	Authentication: none
  */
 require_once('../lib/nusoap.php');
 $proxyhost = isset($_POST['proxyhost']) ? $_POST['proxyhost'] : '';
@@ -15,49 +16,23 @@ $proxyport = isset($_POST['proxyport']) ? $_POST['proxyport'] : '';
 $proxyusername = isset($_POST['proxyusername']) ? $_POST['proxyusername'] : '';
 $proxypassword = isset($_POST['proxypassword']) ? $_POST['proxypassword'] : '';
 $useCURL = isset($_POST['usecurl']) ? $_POST['usecurl'] : '0';
-#echo 'You must set your username and password in the source';
-#exit();
-$client = new nusoap_client("http://180.151.86.86/Zavenir/XRMServices/2011/Organization.svc?singleWsdl", 'wsdl',
+$client = new soapclient('http://www.abundanttech.com/WebServices/Population/population.asmx?WSDL', true,
 						$proxyhost, $proxyport, $proxyusername, $proxypassword);
-$client->soap_defencoding = 'UTF-8';
 $err = $client->getError();
 if ($err) {
 	echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
 }
-
 $client->setUseCurl($useCURL);
-$client->loadWSDL();
-$client->setCredentials("TRIDENTDELHI\souhardya.chowdhury", "pass@321", 'digest');
-
-$data = array('entity'=>array(
-'Attributes' => array(
-			'KeyValuePairOfstringanyType' => array('key'=>'new_salutation','value'=>'Mr')
-), //tns:AttributeCollection
-//'EntityState' => 'Lead', //tns:EntityState
-'FormattedValues' => array(),//tns:FormattedValueCollection
-'Id' => '',//ser:guid
-'LogicalName' => '',//xs:string
-'RelatedEntities' => array()//tns:RelatedEntityCollection
-)
-
-);
-
-$retrie = array( 'entityName' => 'lead', 'id' => 100);
-//$result = $client->call('Retrieve', $retrie);
-$result = $client->call('Create', $data);
-// Check for a fault
+$result = $client->call('getCountries', array(), '', '', false, true);
 if ($client->fault) {
 	echo '<h2>Fault</h2><pre>';
 	print_r($result);
 	echo '</pre>';
 } else {
-	// Check for errors
 	$err = $client->getError();
 	if ($err) {
-		// Display the error
 		echo '<h2>Error</h2><pre>' . $err . '</pre>';
 	} else {
-		// Display the result
 		echo '<h2>Result</h2><pre>';
 		print_r($result);
 		echo '</pre>';

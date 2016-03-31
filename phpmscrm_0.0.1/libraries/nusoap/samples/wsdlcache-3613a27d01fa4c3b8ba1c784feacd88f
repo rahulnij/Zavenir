@@ -1,0 +1,1343 @@
+O:4:"wsdl":52:{s:4:"wsdl";s:53:"http://www.viamichelin.com/ws/services/Geocoding?wsdl";s:7:"schemas";a:4:{s:38:"http://localization.ws.viamichelin.com";a:1:{i:0;O:16:"nusoap_xmlschema":35:{s:6:"schema";s:0:"";s:3:"xml";s:0:"";s:19:"enclosingNamespaces";a:13:{s:8:"SOAP-ENV";s:41:"http://schemas.xmlsoap.org/soap/envelope/";s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:3:"xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:10:"apachesoap";s:30:"http://xml.apache.org/xml-soap";s:4:"impl";s:46:"http://service.localization.ws.viamichelin.com";s:4:"intf";s:46:"http://service.localization.ws.viamichelin.com";s:7:"soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"tns1";s:38:"http://localization.ws.viamichelin.com";s:4:"tns2";s:32:"http://object.ws.viamichelin.com";s:4:"tns3";s:29:"http://geo.ws.viamichelin.com";s:4:"wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";s:8:"wsdlsoap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";}s:10:"schemaInfo";a:5:{s:15:"targetNamespace";s:38:"http://localization.ws.viamichelin.com";s:5:"xmlns";s:32:"http://www.w3.org/2001/XMLSchema";s:13:"schemaVersion";b:0;s:18:"elementFormDefault";s:11:"unqualified";s:20:"attributeFormDefault";s:11:"unqualified";}s:21:"schemaTargetNamespace";s:38:"http://localization.ws.viamichelin.com";s:10:"attributes";a:0:{}s:12:"complexTypes";a:12:{s:12:"InputAddress";a:6:{s:4:"name";s:12:"InputAddress";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:5:{s:7:"address";a:4:{s:4:"name";s:7:"address";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:8:"cityName";a:4:{s:4:"name";s:8:"cityName";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:11:"countryCode";a:4:{s:4:"name";s:11:"countryCode";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:10:"postalCode";a:4:{s:4:"name";s:10:"postalCode";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:9:"stateName";a:4:{s:4:"name";s:9:"stateName";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}}}s:16:"GeocodingRequest";a:6:{s:4:"name";s:16:"GeocodingRequest";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:1:{s:13:"addressesList";a:4:{s:4:"name";s:13:"addressesList";s:8:"nillable";s:4:"true";s:4:"type";s:72:"http://service.localization.ws.viamichelin.com:ArrayOf_tns2_InputAddress";s:4:"form";s:11:"unqualified";}}}s:5:"PoiId";a:6:{s:4:"name";s:5:"PoiId";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:3:{s:2:"id";a:4:{s:4:"name";s:2:"id";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:8:"language";a:4:{s:4:"name";s:8:"language";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:4:"type";a:4:{s:4:"name";s:4:"type";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}}}s:12:"PoiDatasheet";a:6:{s:4:"name";s:12:"PoiDatasheet";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:10:{s:5:"email";a:4:{s:4:"name";s:5:"email";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:3:"fax";a:4:{s:4:"name";s:3:"fax";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:14:"geocodingLevel";a:3:{s:4:"name";s:14:"geocodingLevel";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:11:"unqualified";}s:6:"iconId";a:3:{s:4:"name";s:6:"iconId";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:11:"unqualified";}s:7:"intlFax";a:4:{s:4:"name";s:7:"intlFax";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:14:"intlTelephone1";a:4:{s:4:"name";s:14:"intlTelephone1";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:14:"intlTelephone2";a:4:{s:4:"name";s:14:"intlTelephone2";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:10:"telephone1";a:4:{s:4:"name";s:10:"telephone1";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:10:"telephone2";a:4:{s:4:"name";s:10:"telephone2";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:3:"web";a:4:{s:4:"name";s:3:"web";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}}}s:18:"PoiDescriptionList";a:6:{s:4:"name";s:18:"PoiDescriptionList";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:2:{s:12:"descriptions";a:4:{s:4:"name";s:12:"descriptions";s:8:"nillable";s:4:"true";s:4:"type";s:65:"http://service.localization.ws.viamichelin.com:ArrayOf_xsd_string";s:4:"form";s:11:"unqualified";}s:14:"translatedName";a:4:{s:4:"name";s:14:"translatedName";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}}}s:14:"PoiMetaNumList";a:6:{s:4:"name";s:14:"PoiMetaNumList";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:1:{s:7:"metaNum";a:4:{s:4:"name";s:7:"metaNum";s:8:"nillable";s:4:"true";s:4:"type";s:67:"http://service.localization.ws.viamichelin.com:ArrayOf_tns4_Integer";s:4:"form";s:11:"unqualified";}}}s:17:"PoiMetaStringList";a:6:{s:4:"name";s:17:"PoiMetaStringList";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:1:{s:10:"metaString";a:4:{s:4:"name";s:10:"metaString";s:8:"nillable";s:4:"true";s:4:"type";s:65:"http://service.localization.ws.viamichelin.com:ArrayOf_xsd_string";s:4:"form";s:11:"unqualified";}}}s:3:"Poi";a:6:{s:4:"name";s:3:"Poi";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:7:{s:9:"datasheet";a:4:{s:4:"name";s:9:"datasheet";s:8:"nillable";s:4:"true";s:4:"type";s:51:"http://localization.ws.viamichelin.com:PoiDatasheet";s:4:"form";s:11:"unqualified";}s:15:"descriptionList";a:4:{s:4:"name";s:15:"descriptionList";s:8:"nillable";s:4:"true";s:4:"type";s:57:"http://localization.ws.viamichelin.com:PoiDescriptionList";s:4:"form";s:11:"unqualified";}s:24:"distanceFromSearchCenter";a:3:{s:4:"name";s:24:"distanceFromSearchCenter";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:11:"unqualified";}s:11:"metanumList";a:4:{s:4:"name";s:11:"metanumList";s:8:"nillable";s:4:"true";s:4:"type";s:53:"http://localization.ws.viamichelin.com:PoiMetaNumList";s:4:"form";s:11:"unqualified";}s:14:"metastringList";a:4:{s:4:"name";s:14:"metastringList";s:8:"nillable";s:4:"true";s:4:"type";s:56:"http://localization.ws.viamichelin.com:PoiMetaStringList";s:4:"form";s:11:"unqualified";}s:4:"name";a:4:{s:4:"name";s:4:"name";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:5:"poiID";a:4:{s:4:"name";s:5:"poiID";s:8:"nillable";s:4:"true";s:4:"type";s:44:"http://localization.ws.viamichelin.com:PoiId";s:4:"form";s:11:"unqualified";}}}s:7:"Address";a:6:{s:4:"name";s:7:"Address";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:12:{s:9:"cityLabel";a:4:{s:4:"name";s:9:"cityLabel";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:11:"countryCode";a:4:{s:4:"name";s:11:"countryCode";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:12:"countryLabel";a:4:{s:4:"name";s:12:"countryLabel";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:13:"districtLabel";a:4:{s:4:"name";s:13:"districtLabel";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:20:"formattedAddressLine";a:4:{s:4:"name";s:20:"formattedAddressLine";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:24:"formattedCityAddressLine";a:4:{s:4:"name";s:24:"formattedCityAddressLine";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:14:"gatheringLabel";a:4:{s:4:"name";s:14:"gatheringLabel";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:19:"officialCountryCode";a:4:{s:4:"name";s:19:"officialCountryCode";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:10:"stateLabel";a:4:{s:4:"name";s:10:"stateLabel";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:11:"streetLabel";a:4:{s:4:"name";s:11:"streetLabel";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:12:"streetNumber";a:4:{s:4:"name";s:12:"streetNumber";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:7:"zipCode";a:4:{s:4:"name";s:7:"zipCode";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}}}s:8:"Location";a:6:{s:4:"name";s:8:"Location";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:5:{s:7:"address";a:4:{s:4:"name";s:7:"address";s:8:"nillable";s:4:"true";s:4:"type";s:46:"http://localization.ws.viamichelin.com:Address";s:4:"form";s:11:"unqualified";}s:14:"geoCoordinates";a:4:{s:4:"name";s:14:"geoCoordinates";s:8:"nillable";s:4:"true";s:4:"type";s:44:"http://geo.ws.viamichelin.com:GeoCoordinates";s:4:"form";s:11:"unqualified";}s:2:"id";a:4:{s:4:"name";s:2:"id";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:11:"unqualified";}s:3:"poi";a:4:{s:4:"name";s:3:"poi";s:8:"nillable";s:4:"true";s:4:"type";s:42:"http://localization.ws.viamichelin.com:Poi";s:4:"form";s:11:"unqualified";}s:4:"type";a:3:{s:4:"name";s:4:"type";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:11:"unqualified";}}}s:12:"FindLocation";a:6:{s:4:"name";s:12:"FindLocation";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:4:{s:24:"addressIncoherenceDegree";a:3:{s:4:"name";s:24:"addressIncoherenceDegree";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:11:"unqualified";}s:21:"cityIncoherenceDegree";a:3:{s:4:"name";s:21:"cityIncoherenceDegree";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:11:"unqualified";}s:13:"foundLocation";a:4:{s:4:"name";s:13:"foundLocation";s:8:"nillable";s:4:"true";s:4:"type";s:47:"http://localization.ws.viamichelin.com:Location";s:4:"form";s:11:"unqualified";}s:5:"score";a:3:{s:4:"name";s:5:"score";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:double";s:4:"form";s:11:"unqualified";}}}s:13:"FindLocations";a:6:{s:4:"name";s:13:"FindLocations";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:4:{s:9:"errorCode";a:3:{s:4:"name";s:9:"errorCode";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:11:"unqualified";}s:7:"results";a:4:{s:4:"name";s:7:"results";s:8:"nillable";s:4:"true";s:4:"type";s:72:"http://service.localization.ws.viamichelin.com:ArrayOf_tns2_FindLocation";s:4:"form";s:11:"unqualified";}s:4:"size";a:3:{s:4:"name";s:4:"size";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:11:"unqualified";}s:8:"topScore";a:3:{s:4:"name";s:8:"topScore";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:double";s:4:"form";s:11:"unqualified";}}}}s:16:"complexTypeStack";a:0:{}s:18:"currentComplexType";N;s:8:"elements";a:0:{}s:12:"elementStack";a:0:{}s:14:"currentElement";N;s:11:"simpleTypes";a:0:{}s:15:"simpleTypeStack";a:0:{}s:17:"currentSimpleType";N;s:7:"imports";a:1:{s:41:"http://schemas.xmlsoap.org/soap/encoding/";a:1:{i:0;a:2:{s:8:"location";s:0:"";s:6:"loaded";b:1;}}}s:6:"parser";N;s:8:"position";i:81;s:5:"depth";i:1;s:11:"depth_array";a:4:{i:0;i:0;i:1;i:75;i:2;i:76;i:3;i:80;}s:7:"message";a:81:{i:0;a:1:{s:5:"cdata";s:0:"";}i:1;a:1:{s:5:"cdata";s:0:"";}i:2;a:1:{s:5:"cdata";s:0:"";}i:3;a:1:{s:5:"cdata";s:0:"";}i:4;a:1:{s:5:"cdata";s:0:"";}i:5;a:1:{s:5:"cdata";s:0:"";}i:6;a:1:{s:5:"cdata";s:0:"";}i:7;a:1:{s:5:"cdata";s:0:"";}i:8;a:1:{s:5:"cdata";s:0:"";}i:9;a:1:{s:5:"cdata";s:0:"";}i:10;a:1:{s:5:"cdata";s:0:"";}i:11;a:1:{s:5:"cdata";s:0:"";}i:12;a:1:{s:5:"cdata";s:0:"";}i:13;a:1:{s:5:"cdata";s:0:"";}i:14;a:1:{s:5:"cdata";s:0:"";}i:15;a:1:{s:5:"cdata";s:0:"";}i:16;a:1:{s:5:"cdata";s:0:"";}i:17;a:1:{s:5:"cdata";s:0:"";}i:18;a:1:{s:5:"cdata";s:0:"";}i:19;a:1:{s:5:"cdata";s:0:"";}i:20;a:1:{s:5:"cdata";s:0:"";}i:21;a:1:{s:5:"cdata";s:0:"";}i:22;a:1:{s:5:"cdata";s:0:"";}i:23;a:1:{s:5:"cdata";s:0:"";}i:24;a:1:{s:5:"cdata";s:0:"";}i:25;a:1:{s:5:"cdata";s:0:"";}i:26;a:1:{s:5:"cdata";s:0:"";}i:27;a:1:{s:5:"cdata";s:0:"";}i:28;a:1:{s:5:"cdata";s:0:"";}i:29;a:1:{s:5:"cdata";s:0:"";}i:30;a:1:{s:5:"cdata";s:0:"";}i:31;a:1:{s:5:"cdata";s:0:"";}i:32;a:1:{s:5:"cdata";s:0:"";}i:33;a:1:{s:5:"cdata";s:0:"";}i:34;a:1:{s:5:"cdata";s:0:"";}i:35;a:1:{s:5:"cdata";s:0:"";}i:36;a:1:{s:5:"cdata";s:0:"";}i:37;a:1:{s:5:"cdata";s:0:"";}i:38;a:1:{s:5:"cdata";s:0:"";}i:39;a:1:{s:5:"cdata";s:0:"";}i:40;a:1:{s:5:"cdata";s:0:"";}i:41;a:1:{s:5:"cdata";s:0:"";}i:42;a:1:{s:5:"cdata";s:0:"";}i:43;a:1:{s:5:"cdata";s:0:"";}i:44;a:1:{s:5:"cdata";s:0:"";}i:45;a:1:{s:5:"cdata";s:0:"";}i:46;a:1:{s:5:"cdata";s:0:"";}i:47;a:1:{s:5:"cdata";s:0:"";}i:48;a:1:{s:5:"cdata";s:0:"";}i:49;a:1:{s:5:"cdata";s:0:"";}i:50;a:1:{s:5:"cdata";s:0:"";}i:51;a:1:{s:5:"cdata";s:0:"";}i:52;a:1:{s:5:"cdata";s:0:"";}i:53;a:1:{s:5:"cdata";s:0:"";}i:54;a:1:{s:5:"cdata";s:0:"";}i:55;a:1:{s:5:"cdata";s:0:"";}i:56;a:1:{s:5:"cdata";s:0:"";}i:57;a:1:{s:5:"cdata";s:0:"";}i:58;a:1:{s:5:"cdata";s:0:"";}i:59;a:1:{s:5:"cdata";s:0:"";}i:60;a:1:{s:5:"cdata";s:0:"";}i:61;a:1:{s:5:"cdata";s:0:"";}i:62;a:1:{s:5:"cdata";s:0:"";}i:63;a:1:{s:5:"cdata";s:0:"";}i:64;a:1:{s:5:"cdata";s:0:"";}i:65;a:1:{s:5:"cdata";s:0:"";}i:66;a:1:{s:5:"cdata";s:0:"";}i:67;a:1:{s:5:"cdata";s:0:"";}i:68;a:1:{s:5:"cdata";s:0:"";}i:69;a:1:{s:5:"cdata";s:0:"";}i:70;a:1:{s:5:"cdata";s:0:"";}i:71;a:1:{s:5:"cdata";s:0:"";}i:72;a:1:{s:5:"cdata";s:0:"";}i:73;a:1:{s:5:"cdata";s:0:"";}i:74;a:1:{s:5:"cdata";s:0:"";}i:75;a:1:{s:5:"cdata";s:0:"";}i:76;a:1:{s:5:"cdata";s:0:"";}i:77;a:1:{s:5:"cdata";s:0:"";}i:78;a:1:{s:5:"cdata";s:0:"";}i:79;a:1:{s:5:"cdata";s:0:"";}i:80;a:1:{s:5:"cdata";s:0:"";}}s:16:"defaultNamespace";a:81:{i:0;s:32:"http://www.w3.org/2001/XMLSchema";i:1;s:32:"http://www.w3.org/2001/XMLSchema";i:2;s:32:"http://www.w3.org/2001/XMLSchema";i:3;s:32:"http://www.w3.org/2001/XMLSchema";i:4;s:32:"http://www.w3.org/2001/XMLSchema";i:5;s:32:"http://www.w3.org/2001/XMLSchema";i:6;s:32:"http://www.w3.org/2001/XMLSchema";i:7;s:32:"http://www.w3.org/2001/XMLSchema";i:8;s:32:"http://www.w3.org/2001/XMLSchema";i:9;s:32:"http://www.w3.org/2001/XMLSchema";i:10;s:32:"http://www.w3.org/2001/XMLSchema";i:11;s:32:"http://www.w3.org/2001/XMLSchema";i:12;s:32:"http://www.w3.org/2001/XMLSchema";i:13;s:32:"http://www.w3.org/2001/XMLSchema";i:14;s:32:"http://www.w3.org/2001/XMLSchema";i:15;s:32:"http://www.w3.org/2001/XMLSchema";i:16;s:32:"http://www.w3.org/2001/XMLSchema";i:17;s:32:"http://www.w3.org/2001/XMLSchema";i:18;s:32:"http://www.w3.org/2001/XMLSchema";i:19;s:32:"http://www.w3.org/2001/XMLSchema";i:20;s:32:"http://www.w3.org/2001/XMLSchema";i:21;s:32:"http://www.w3.org/2001/XMLSchema";i:22;s:32:"http://www.w3.org/2001/XMLSchema";i:23;s:32:"http://www.w3.org/2001/XMLSchema";i:24;s:32:"http://www.w3.org/2001/XMLSchema";i:25;s:32:"http://www.w3.org/2001/XMLSchema";i:26;s:32:"http://www.w3.org/2001/XMLSchema";i:27;s:32:"http://www.w3.org/2001/XMLSchema";i:28;s:32:"http://www.w3.org/2001/XMLSchema";i:29;s:32:"http://www.w3.org/2001/XMLSchema";i:30;s:32:"http://www.w3.org/2001/XMLSchema";i:31;s:32:"http://www.w3.org/2001/XMLSchema";i:32;s:32:"http://www.w3.org/2001/XMLSchema";i:33;s:32:"http://www.w3.org/2001/XMLSchema";i:34;s:32:"http://www.w3.org/2001/XMLSchema";i:35;s:32:"http://www.w3.org/2001/XMLSchema";i:36;s:32:"http://www.w3.org/2001/XMLSchema";i:37;s:32:"http://www.w3.org/2001/XMLSchema";i:38;s:32:"http://www.w3.org/2001/XMLSchema";i:39;s:32:"http://www.w3.org/2001/XMLSchema";i:40;s:32:"http://www.w3.org/2001/XMLSchema";i:41;s:32:"http://www.w3.org/2001/XMLSchema";i:42;s:32:"http://www.w3.org/2001/XMLSchema";i:43;s:32:"http://www.w3.org/2001/XMLSchema";i:44;s:32:"http://www.w3.org/2001/XMLSchema";i:45;s:32:"http://www.w3.org/2001/XMLSchema";i:46;s:32:"http://www.w3.org/2001/XMLSchema";i:47;s:32:"http://www.w3.org/2001/XMLSchema";i:48;s:32:"http://www.w3.org/2001/XMLSchema";i:49;s:32:"http://www.w3.org/2001/XMLSchema";i:50;s:32:"http://www.w3.org/2001/XMLSchema";i:51;s:32:"http://www.w3.org/2001/XMLSchema";i:52;s:32:"http://www.w3.org/2001/XMLSchema";i:53;s:32:"http://www.w3.org/2001/XMLSchema";i:54;s:32:"http://www.w3.org/2001/XMLSchema";i:55;s:32:"http://www.w3.org/2001/XMLSchema";i:56;s:32:"http://www.w3.org/2001/XMLSchema";i:57;s:32:"http://www.w3.org/2001/XMLSchema";i:58;s:32:"http://www.w3.org/2001/XMLSchema";i:59;s:32:"http://www.w3.org/2001/XMLSchema";i:60;s:32:"http://www.w3.org/2001/XMLSchema";i:61;s:32:"http://www.w3.org/2001/XMLSchema";i:62;s:32:"http://www.w3.org/2001/XMLSchema";i:63;s:32:"http://www.w3.org/2001/XMLSchema";i:64;s:32:"http://www.w3.org/2001/XMLSchema";i:65;s:32:"http://www.w3.org/2001/XMLSchema";i:66;s:32:"http://www.w3.org/2001/XMLSchema";i:67;s:32:"http://www.w3.org/2001/XMLSchema";i:68;s:32:"http://www.w3.org/2001/XMLSchema";i:69;s:32:"http://www.w3.org/2001/XMLSchema";i:70;s:32:"http://www.w3.org/2001/XMLSchema";i:71;s:32:"http://www.w3.org/2001/XMLSchema";i:72;s:32:"http://www.w3.org/2001/XMLSchema";i:73;s:32:"http://www.w3.org/2001/XMLSchema";i:74;s:32:"http://www.w3.org/2001/XMLSchema";i:75;s:32:"http://www.w3.org/2001/XMLSchema";i:76;s:32:"http://www.w3.org/2001/XMLSchema";i:77;s:32:"http://www.w3.org/2001/XMLSchema";i:78;s:32:"http://www.w3.org/2001/XMLSchema";i:79;s:32:"http://www.w3.org/2001/XMLSchema";i:80;s:32:"http://www.w3.org/2001/XMLSchema";}s:5:"title";s:6:"NuSOAP";s:7:"version";s:5:"0.9.5";s:8:"revision";s:18:"$Revision: 1.123 $";s:9:"error_str";s:0:"";s:9:"debug_str";s:0:"";s:12:"charencoding";b:1;s:10:"debugLevel";i:9;s:16:"XMLSchemaVersion";s:32:"http://www.w3.org/2001/XMLSchema";s:16:"soap_defencoding";s:10:"ISO-8859-1";s:10:"namespaces";a:13:{s:8:"SOAP-ENV";s:41:"http://schemas.xmlsoap.org/soap/envelope/";s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:3:"xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:10:"apachesoap";s:30:"http://xml.apache.org/xml-soap";s:4:"impl";s:46:"http://service.localization.ws.viamichelin.com";s:4:"intf";s:46:"http://service.localization.ws.viamichelin.com";s:7:"soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"tns1";s:38:"http://localization.ws.viamichelin.com";s:4:"tns2";s:32:"http://object.ws.viamichelin.com";s:4:"tns3";s:29:"http://geo.ws.viamichelin.com";s:4:"wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";s:8:"wsdlsoap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";}s:14:"usedNamespaces";a:2:{s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";}s:7:"typemap";a:6:{s:32:"http://www.w3.org/2001/XMLSchema";a:43:{s:6:"string";s:6:"string";s:7:"boolean";s:7:"boolean";s:5:"float";s:6:"double";s:6:"double";s:6:"double";s:7:"decimal";s:6:"double";s:8:"duration";s:0:"";s:8:"dateTime";s:6:"string";s:4:"time";s:6:"string";s:4:"date";s:6:"string";s:10:"gYearMonth";s:0:"";s:5:"gYear";s:0:"";s:9:"gMonthDay";s:0:"";s:4:"gDay";s:0:"";s:6:"gMonth";s:0:"";s:9:"hexBinary";s:6:"string";s:12:"base64Binary";s:6:"string";s:7:"anyType";s:6:"string";s:13:"anySimpleType";s:6:"string";s:16:"normalizedString";s:6:"string";s:5:"token";s:6:"string";s:8:"language";s:0:"";s:7:"NMTOKEN";s:0:"";s:8:"NMTOKENS";s:0:"";s:4:"Name";s:0:"";s:6:"NCName";s:0:"";s:2:"ID";s:0:"";s:5:"IDREF";s:0:"";s:6:"IDREFS";s:0:"";s:6:"ENTITY";s:0:"";s:8:"ENTITIES";s:0:"";s:7:"integer";s:7:"integer";s:18:"nonPositiveInteger";s:7:"integer";s:15:"negativeInteger";s:7:"integer";s:4:"long";s:7:"integer";s:3:"int";s:7:"integer";s:5:"short";s:7:"integer";s:4:"byte";s:7:"integer";s:18:"nonNegativeInteger";s:7:"integer";s:12:"unsignedLong";s:0:"";s:11:"unsignedInt";s:0:"";s:13:"unsignedShort";s:0:"";s:12:"unsignedByte";s:0:"";s:15:"positiveInteger";s:0:"";}s:35:"http://www.w3.org/2000/10/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:32:"http://www.w3.org/1999/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:26:"http://soapinterop.org/xsd";a:1:{s:10:"SOAPStruct";s:6:"struct";}s:41:"http://schemas.xmlsoap.org/soap/encoding/";a:3:{s:6:"base64";s:6:"string";s:5:"array";s:5:"array";s:5:"Array";s:5:"array";}s:30:"http://xml.apache.org/xml-soap";a:1:{i:0;s:3:"Map";}}s:11:"xmlEntities";a:5:{s:4:"quot";s:1:""";s:3:"amp";s:1:"&";s:2:"lt";s:1:"<";s:2:"gt";s:1:">";s:4:"apos";s:1:"'";}}}s:46:"http://service.localization.ws.viamichelin.com";a:1:{i:0;O:16:"nusoap_xmlschema":35:{s:6:"schema";s:0:"";s:3:"xml";s:0:"";s:19:"enclosingNamespaces";a:13:{s:8:"SOAP-ENV";s:41:"http://schemas.xmlsoap.org/soap/envelope/";s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:3:"xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:10:"apachesoap";s:30:"http://xml.apache.org/xml-soap";s:4:"impl";s:46:"http://service.localization.ws.viamichelin.com";s:4:"intf";s:46:"http://service.localization.ws.viamichelin.com";s:7:"soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"tns1";s:38:"http://localization.ws.viamichelin.com";s:4:"tns2";s:32:"http://object.ws.viamichelin.com";s:4:"tns3";s:29:"http://geo.ws.viamichelin.com";s:4:"wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";s:8:"wsdlsoap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";}s:10:"schemaInfo";a:5:{s:15:"targetNamespace";s:46:"http://service.localization.ws.viamichelin.com";s:5:"xmlns";s:32:"http://www.w3.org/2001/XMLSchema";s:13:"schemaVersion";b:0;s:18:"elementFormDefault";s:11:"unqualified";s:20:"attributeFormDefault";s:11:"unqualified";}s:21:"schemaTargetNamespace";s:46:"http://service.localization.ws.viamichelin.com";s:10:"attributes";a:0:{}s:12:"complexTypes";a:5:{s:25:"ArrayOf_tns2_InputAddress";a:7:{s:4:"name";s:25:"ArrayOf_tns2_InputAddress";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:5:"array";s:13:"simpleContent";s:5:"false";s:15:"restrictionBase";s:47:"http://schemas.xmlsoap.org/soap/encoding/:Array";s:5:"attrs";a:1:{s:53:"http://localization.ws.viamichelin.com:InputAddress[]";a:3:{s:3:"ref";s:51:"http://schemas.xmlsoap.org/soap/encoding/:arrayType";s:42:"http://schemas.xmlsoap.org/wsdl/:arrayType";s:53:"http://localization.ws.viamichelin.com:InputAddress[]";s:4:"form";s:11:"unqualified";}}s:9:"arrayType";s:51:"http://localization.ws.viamichelin.com:InputAddress";}s:18:"ArrayOf_xsd_string";a:7:{s:4:"name";s:18:"ArrayOf_xsd_string";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:5:"array";s:13:"simpleContent";s:5:"false";s:15:"restrictionBase";s:47:"http://schemas.xmlsoap.org/soap/encoding/:Array";s:5:"attrs";a:1:{s:41:"http://www.w3.org/2001/XMLSchema:string[]";a:3:{s:3:"ref";s:51:"http://schemas.xmlsoap.org/soap/encoding/:arrayType";s:42:"http://schemas.xmlsoap.org/wsdl/:arrayType";s:41:"http://www.w3.org/2001/XMLSchema:string[]";s:4:"form";s:11:"unqualified";}}s:9:"arrayType";s:39:"http://www.w3.org/2001/XMLSchema:string";}s:20:"ArrayOf_tns4_Integer";a:7:{s:4:"name";s:20:"ArrayOf_tns4_Integer";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:5:"array";s:13:"simpleContent";s:5:"false";s:15:"restrictionBase";s:47:"http://schemas.xmlsoap.org/soap/encoding/:Array";s:5:"attrs";a:1:{s:42:"http://object.ws.viamichelin.com:Integer[]";a:3:{s:3:"ref";s:51:"http://schemas.xmlsoap.org/soap/encoding/:arrayType";s:42:"http://schemas.xmlsoap.org/wsdl/:arrayType";s:42:"http://object.ws.viamichelin.com:Integer[]";s:4:"form";s:11:"unqualified";}}s:9:"arrayType";s:40:"http://object.ws.viamichelin.com:Integer";}s:25:"ArrayOf_tns2_FindLocation";a:7:{s:4:"name";s:25:"ArrayOf_tns2_FindLocation";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:5:"array";s:13:"simpleContent";s:5:"false";s:15:"restrictionBase";s:47:"http://schemas.xmlsoap.org/soap/encoding/:Array";s:5:"attrs";a:1:{s:53:"http://localization.ws.viamichelin.com:FindLocation[]";a:3:{s:3:"ref";s:51:"http://schemas.xmlsoap.org/soap/encoding/:arrayType";s:42:"http://schemas.xmlsoap.org/wsdl/:arrayType";s:53:"http://localization.ws.viamichelin.com:FindLocation[]";s:4:"form";s:11:"unqualified";}}s:9:"arrayType";s:51:"http://localization.ws.viamichelin.com:FindLocation";}s:26:"ArrayOf_tns2_FindLocations";a:7:{s:4:"name";s:26:"ArrayOf_tns2_FindLocations";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:5:"array";s:13:"simpleContent";s:5:"false";s:15:"restrictionBase";s:47:"http://schemas.xmlsoap.org/soap/encoding/:Array";s:5:"attrs";a:1:{s:54:"http://localization.ws.viamichelin.com:FindLocations[]";a:3:{s:3:"ref";s:51:"http://schemas.xmlsoap.org/soap/encoding/:arrayType";s:42:"http://schemas.xmlsoap.org/wsdl/:arrayType";s:54:"http://localization.ws.viamichelin.com:FindLocations[]";s:4:"form";s:11:"unqualified";}}s:9:"arrayType";s:52:"http://localization.ws.viamichelin.com:FindLocations";}}s:16:"complexTypeStack";a:0:{}s:18:"currentComplexType";N;s:8:"elements";a:0:{}s:12:"elementStack";a:0:{}s:14:"currentElement";N;s:11:"simpleTypes";a:0:{}s:15:"simpleTypeStack";a:0:{}s:17:"currentSimpleType";N;s:7:"imports";a:1:{s:41:"http://schemas.xmlsoap.org/soap/encoding/";a:1:{i:0;a:2:{s:8:"location";s:0:"";s:6:"loaded";b:1;}}}s:6:"parser";N;s:8:"position";i:22;s:5:"depth";i:1;s:11:"depth_array";a:5:{i:0;i:0;i:1;i:18;i:2;i:19;i:3;i:20;i:4;i:21;}s:7:"message";a:22:{i:0;a:1:{s:5:"cdata";s:0:"";}i:1;a:1:{s:5:"cdata";s:0:"";}i:2;a:1:{s:5:"cdata";s:0:"";}i:3;a:1:{s:5:"cdata";s:0:"";}i:4;a:1:{s:5:"cdata";s:0:"";}i:5;a:1:{s:5:"cdata";s:0:"";}i:6;a:1:{s:5:"cdata";s:0:"";}i:7;a:1:{s:5:"cdata";s:0:"";}i:8;a:1:{s:5:"cdata";s:0:"";}i:9;a:1:{s:5:"cdata";s:0:"";}i:10;a:1:{s:5:"cdata";s:0:"";}i:11;a:1:{s:5:"cdata";s:0:"";}i:12;a:1:{s:5:"cdata";s:0:"";}i:13;a:1:{s:5:"cdata";s:0:"";}i:14;a:1:{s:5:"cdata";s:0:"";}i:15;a:1:{s:5:"cdata";s:0:"";}i:16;a:1:{s:5:"cdata";s:0:"";}i:17;a:1:{s:5:"cdata";s:0:"";}i:18;a:1:{s:5:"cdata";s:0:"";}i:19;a:1:{s:5:"cdata";s:0:"";}i:20;a:1:{s:5:"cdata";s:0:"";}i:21;a:1:{s:5:"cdata";s:0:"";}}s:16:"defaultNamespace";a:22:{i:0;s:32:"http://www.w3.org/2001/XMLSchema";i:1;s:32:"http://www.w3.org/2001/XMLSchema";i:2;s:32:"http://www.w3.org/2001/XMLSchema";i:3;s:32:"http://www.w3.org/2001/XMLSchema";i:4;s:32:"http://www.w3.org/2001/XMLSchema";i:5;s:32:"http://www.w3.org/2001/XMLSchema";i:6;s:32:"http://www.w3.org/2001/XMLSchema";i:7;s:32:"http://www.w3.org/2001/XMLSchema";i:8;s:32:"http://www.w3.org/2001/XMLSchema";i:9;s:32:"http://www.w3.org/2001/XMLSchema";i:10;s:32:"http://www.w3.org/2001/XMLSchema";i:11;s:32:"http://www.w3.org/2001/XMLSchema";i:12;s:32:"http://www.w3.org/2001/XMLSchema";i:13;s:32:"http://www.w3.org/2001/XMLSchema";i:14;s:32:"http://www.w3.org/2001/XMLSchema";i:15;s:32:"http://www.w3.org/2001/XMLSchema";i:16;s:32:"http://www.w3.org/2001/XMLSchema";i:17;s:32:"http://www.w3.org/2001/XMLSchema";i:18;s:32:"http://www.w3.org/2001/XMLSchema";i:19;s:32:"http://www.w3.org/2001/XMLSchema";i:20;s:32:"http://www.w3.org/2001/XMLSchema";i:21;s:32:"http://www.w3.org/2001/XMLSchema";}s:5:"title";s:6:"NuSOAP";s:7:"version";s:5:"0.9.5";s:8:"revision";s:18:"$Revision: 1.123 $";s:9:"error_str";s:0:"";s:9:"debug_str";s:0:"";s:12:"charencoding";b:1;s:10:"debugLevel";i:9;s:16:"XMLSchemaVersion";s:32:"http://www.w3.org/2001/XMLSchema";s:16:"soap_defencoding";s:10:"ISO-8859-1";s:10:"namespaces";a:13:{s:8:"SOAP-ENV";s:41:"http://schemas.xmlsoap.org/soap/envelope/";s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:3:"xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:10:"apachesoap";s:30:"http://xml.apache.org/xml-soap";s:4:"impl";s:46:"http://service.localization.ws.viamichelin.com";s:4:"intf";s:46:"http://service.localization.ws.viamichelin.com";s:7:"soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"tns1";s:38:"http://localization.ws.viamichelin.com";s:4:"tns2";s:32:"http://object.ws.viamichelin.com";s:4:"tns3";s:29:"http://geo.ws.viamichelin.com";s:4:"wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";s:8:"wsdlsoap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";}s:14:"usedNamespaces";a:2:{s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";}s:7:"typemap";a:6:{s:32:"http://www.w3.org/2001/XMLSchema";a:43:{s:6:"string";s:6:"string";s:7:"boolean";s:7:"boolean";s:5:"float";s:6:"double";s:6:"double";s:6:"double";s:7:"decimal";s:6:"double";s:8:"duration";s:0:"";s:8:"dateTime";s:6:"string";s:4:"time";s:6:"string";s:4:"date";s:6:"string";s:10:"gYearMonth";s:0:"";s:5:"gYear";s:0:"";s:9:"gMonthDay";s:0:"";s:4:"gDay";s:0:"";s:6:"gMonth";s:0:"";s:9:"hexBinary";s:6:"string";s:12:"base64Binary";s:6:"string";s:7:"anyType";s:6:"string";s:13:"anySimpleType";s:6:"string";s:16:"normalizedString";s:6:"string";s:5:"token";s:6:"string";s:8:"language";s:0:"";s:7:"NMTOKEN";s:0:"";s:8:"NMTOKENS";s:0:"";s:4:"Name";s:0:"";s:6:"NCName";s:0:"";s:2:"ID";s:0:"";s:5:"IDREF";s:0:"";s:6:"IDREFS";s:0:"";s:6:"ENTITY";s:0:"";s:8:"ENTITIES";s:0:"";s:7:"integer";s:7:"integer";s:18:"nonPositiveInteger";s:7:"integer";s:15:"negativeInteger";s:7:"integer";s:4:"long";s:7:"integer";s:3:"int";s:7:"integer";s:5:"short";s:7:"integer";s:4:"byte";s:7:"integer";s:18:"nonNegativeInteger";s:7:"integer";s:12:"unsignedLong";s:0:"";s:11:"unsignedInt";s:0:"";s:13:"unsignedShort";s:0:"";s:12:"unsignedByte";s:0:"";s:15:"positiveInteger";s:0:"";}s:35:"http://www.w3.org/2000/10/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:32:"http://www.w3.org/1999/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:26:"http://soapinterop.org/xsd";a:1:{s:10:"SOAPStruct";s:6:"struct";}s:41:"http://schemas.xmlsoap.org/soap/encoding/";a:3:{s:6:"base64";s:6:"string";s:5:"array";s:5:"array";s:5:"Array";s:5:"array";}s:30:"http://xml.apache.org/xml-soap";a:1:{i:0;s:3:"Map";}}s:11:"xmlEntities";a:5:{s:4:"quot";s:1:""";s:3:"amp";s:1:"&";s:2:"lt";s:1:"<";s:2:"gt";s:1:">";s:4:"apos";s:1:"'";}}}s:32:"http://object.ws.viamichelin.com";a:1:{i:0;O:16:"nusoap_xmlschema":35:{s:6:"schema";s:0:"";s:3:"xml";s:0:"";s:19:"enclosingNamespaces";a:13:{s:8:"SOAP-ENV";s:41:"http://schemas.xmlsoap.org/soap/envelope/";s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:3:"xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:10:"apachesoap";s:30:"http://xml.apache.org/xml-soap";s:4:"impl";s:46:"http://service.localization.ws.viamichelin.com";s:4:"intf";s:46:"http://service.localization.ws.viamichelin.com";s:7:"soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"tns1";s:38:"http://localization.ws.viamichelin.com";s:4:"tns2";s:32:"http://object.ws.viamichelin.com";s:4:"tns3";s:29:"http://geo.ws.viamichelin.com";s:4:"wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";s:8:"wsdlsoap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";}s:10:"schemaInfo";a:5:{s:15:"targetNamespace";s:32:"http://object.ws.viamichelin.com";s:5:"xmlns";s:32:"http://www.w3.org/2001/XMLSchema";s:13:"schemaVersion";b:0;s:18:"elementFormDefault";s:11:"unqualified";s:20:"attributeFormDefault";s:11:"unqualified";}s:21:"schemaTargetNamespace";s:32:"http://object.ws.viamichelin.com";s:10:"attributes";a:0:{}s:12:"complexTypes";a:1:{s:7:"Integer";a:6:{s:4:"name";s:7:"Integer";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:1:{s:5:"value";a:3:{s:4:"name";s:5:"value";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:11:"unqualified";}}}}s:16:"complexTypeStack";a:0:{}s:18:"currentComplexType";N;s:8:"elements";a:0:{}s:12:"elementStack";a:0:{}s:14:"currentElement";N;s:11:"simpleTypes";a:0:{}s:15:"simpleTypeStack";a:0:{}s:17:"currentSimpleType";N;s:7:"imports";a:1:{s:41:"http://schemas.xmlsoap.org/soap/encoding/";a:1:{i:0;a:2:{s:8:"location";s:0:"";s:6:"loaded";b:1;}}}s:6:"parser";N;s:8:"position";i:5;s:5:"depth";i:1;s:11:"depth_array";a:4:{i:0;i:0;i:1;i:2;i:2;i:3;i:3;i:4;}s:7:"message";a:5:{i:0;a:1:{s:5:"cdata";s:0:"";}i:1;a:1:{s:5:"cdata";s:0:"";}i:2;a:1:{s:5:"cdata";s:0:"";}i:3;a:1:{s:5:"cdata";s:0:"";}i:4;a:1:{s:5:"cdata";s:0:"";}}s:16:"defaultNamespace";a:5:{i:0;s:32:"http://www.w3.org/2001/XMLSchema";i:1;s:32:"http://www.w3.org/2001/XMLSchema";i:2;s:32:"http://www.w3.org/2001/XMLSchema";i:3;s:32:"http://www.w3.org/2001/XMLSchema";i:4;s:32:"http://www.w3.org/2001/XMLSchema";}s:5:"title";s:6:"NuSOAP";s:7:"version";s:5:"0.9.5";s:8:"revision";s:18:"$Revision: 1.123 $";s:9:"error_str";s:0:"";s:9:"debug_str";s:0:"";s:12:"charencoding";b:1;s:10:"debugLevel";i:9;s:16:"XMLSchemaVersion";s:32:"http://www.w3.org/2001/XMLSchema";s:16:"soap_defencoding";s:10:"ISO-8859-1";s:10:"namespaces";a:13:{s:8:"SOAP-ENV";s:41:"http://schemas.xmlsoap.org/soap/envelope/";s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:3:"xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:10:"apachesoap";s:30:"http://xml.apache.org/xml-soap";s:4:"impl";s:46:"http://service.localization.ws.viamichelin.com";s:4:"intf";s:46:"http://service.localization.ws.viamichelin.com";s:7:"soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"tns1";s:38:"http://localization.ws.viamichelin.com";s:4:"tns2";s:32:"http://object.ws.viamichelin.com";s:4:"tns3";s:29:"http://geo.ws.viamichelin.com";s:4:"wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";s:8:"wsdlsoap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";}s:14:"usedNamespaces";a:2:{s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";}s:7:"typemap";a:6:{s:32:"http://www.w3.org/2001/XMLSchema";a:43:{s:6:"string";s:6:"string";s:7:"boolean";s:7:"boolean";s:5:"float";s:6:"double";s:6:"double";s:6:"double";s:7:"decimal";s:6:"double";s:8:"duration";s:0:"";s:8:"dateTime";s:6:"string";s:4:"time";s:6:"string";s:4:"date";s:6:"string";s:10:"gYearMonth";s:0:"";s:5:"gYear";s:0:"";s:9:"gMonthDay";s:0:"";s:4:"gDay";s:0:"";s:6:"gMonth";s:0:"";s:9:"hexBinary";s:6:"string";s:12:"base64Binary";s:6:"string";s:7:"anyType";s:6:"string";s:13:"anySimpleType";s:6:"string";s:16:"normalizedString";s:6:"string";s:5:"token";s:6:"string";s:8:"language";s:0:"";s:7:"NMTOKEN";s:0:"";s:8:"NMTOKENS";s:0:"";s:4:"Name";s:0:"";s:6:"NCName";s:0:"";s:2:"ID";s:0:"";s:5:"IDREF";s:0:"";s:6:"IDREFS";s:0:"";s:6:"ENTITY";s:0:"";s:8:"ENTITIES";s:0:"";s:7:"integer";s:7:"integer";s:18:"nonPositiveInteger";s:7:"integer";s:15:"negativeInteger";s:7:"integer";s:4:"long";s:7:"integer";s:3:"int";s:7:"integer";s:5:"short";s:7:"integer";s:4:"byte";s:7:"integer";s:18:"nonNegativeInteger";s:7:"integer";s:12:"unsignedLong";s:0:"";s:11:"unsignedInt";s:0:"";s:13:"unsignedShort";s:0:"";s:12:"unsignedByte";s:0:"";s:15:"positiveInteger";s:0:"";}s:35:"http://www.w3.org/2000/10/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:32:"http://www.w3.org/1999/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:26:"http://soapinterop.org/xsd";a:1:{s:10:"SOAPStruct";s:6:"struct";}s:41:"http://schemas.xmlsoap.org/soap/encoding/";a:3:{s:6:"base64";s:6:"string";s:5:"array";s:5:"array";s:5:"Array";s:5:"array";}s:30:"http://xml.apache.org/xml-soap";a:1:{i:0;s:3:"Map";}}s:11:"xmlEntities";a:5:{s:4:"quot";s:1:""";s:3:"amp";s:1:"&";s:2:"lt";s:1:"<";s:2:"gt";s:1:">";s:4:"apos";s:1:"'";}}}s:29:"http://geo.ws.viamichelin.com";a:1:{i:0;O:16:"nusoap_xmlschema":35:{s:6:"schema";s:0:"";s:3:"xml";s:0:"";s:19:"enclosingNamespaces";a:13:{s:8:"SOAP-ENV";s:41:"http://schemas.xmlsoap.org/soap/envelope/";s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:3:"xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:10:"apachesoap";s:30:"http://xml.apache.org/xml-soap";s:4:"impl";s:46:"http://service.localization.ws.viamichelin.com";s:4:"intf";s:46:"http://service.localization.ws.viamichelin.com";s:7:"soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"tns1";s:38:"http://localization.ws.viamichelin.com";s:4:"tns2";s:32:"http://object.ws.viamichelin.com";s:4:"tns3";s:29:"http://geo.ws.viamichelin.com";s:4:"wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";s:8:"wsdlsoap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";}s:10:"schemaInfo";a:5:{s:15:"targetNamespace";s:29:"http://geo.ws.viamichelin.com";s:5:"xmlns";s:32:"http://www.w3.org/2001/XMLSchema";s:13:"schemaVersion";b:0;s:18:"elementFormDefault";s:11:"unqualified";s:20:"attributeFormDefault";s:11:"unqualified";}s:21:"schemaTargetNamespace";s:29:"http://geo.ws.viamichelin.com";s:10:"attributes";a:0:{}s:12:"complexTypes";a:1:{s:14:"GeoCoordinates";a:6:{s:4:"name";s:14:"GeoCoordinates";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:13:"simpleContent";s:5:"false";s:10:"compositor";s:8:"sequence";s:8:"elements";a:2:{s:8:"latitude";a:3:{s:4:"name";s:8:"latitude";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:double";s:4:"form";s:11:"unqualified";}s:9:"longitude";a:3:{s:4:"name";s:9:"longitude";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:double";s:4:"form";s:11:"unqualified";}}}}s:16:"complexTypeStack";a:0:{}s:18:"currentComplexType";N;s:8:"elements";a:0:{}s:12:"elementStack";a:0:{}s:14:"currentElement";N;s:11:"simpleTypes";a:0:{}s:15:"simpleTypeStack";a:0:{}s:17:"currentSimpleType";N;s:7:"imports";a:1:{s:41:"http://schemas.xmlsoap.org/soap/encoding/";a:1:{i:0;a:2:{s:8:"location";s:0:"";s:6:"loaded";b:1;}}}s:6:"parser";N;s:8:"position";i:6;s:5:"depth";i:1;s:11:"depth_array";a:4:{i:0;i:0;i:1;i:2;i:2;i:3;i:3;i:5;}s:7:"message";a:6:{i:0;a:1:{s:5:"cdata";s:0:"";}i:1;a:1:{s:5:"cdata";s:0:"";}i:2;a:1:{s:5:"cdata";s:0:"";}i:3;a:1:{s:5:"cdata";s:0:"";}i:4;a:1:{s:5:"cdata";s:0:"";}i:5;a:1:{s:5:"cdata";s:0:"";}}s:16:"defaultNamespace";a:6:{i:0;s:32:"http://www.w3.org/2001/XMLSchema";i:1;s:32:"http://www.w3.org/2001/XMLSchema";i:2;s:32:"http://www.w3.org/2001/XMLSchema";i:3;s:32:"http://www.w3.org/2001/XMLSchema";i:4;s:32:"http://www.w3.org/2001/XMLSchema";i:5;s:32:"http://www.w3.org/2001/XMLSchema";}s:5:"title";s:6:"NuSOAP";s:7:"version";s:5:"0.9.5";s:8:"revision";s:18:"$Revision: 1.123 $";s:9:"error_str";s:0:"";s:9:"debug_str";s:0:"";s:12:"charencoding";b:1;s:10:"debugLevel";i:9;s:16:"XMLSchemaVersion";s:32:"http://www.w3.org/2001/XMLSchema";s:16:"soap_defencoding";s:10:"ISO-8859-1";s:10:"namespaces";a:13:{s:8:"SOAP-ENV";s:41:"http://schemas.xmlsoap.org/soap/envelope/";s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:3:"xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:10:"apachesoap";s:30:"http://xml.apache.org/xml-soap";s:4:"impl";s:46:"http://service.localization.ws.viamichelin.com";s:4:"intf";s:46:"http://service.localization.ws.viamichelin.com";s:7:"soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"tns1";s:38:"http://localization.ws.viamichelin.com";s:4:"tns2";s:32:"http://object.ws.viamichelin.com";s:4:"tns3";s:29:"http://geo.ws.viamichelin.com";s:4:"wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";s:8:"wsdlsoap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";}s:14:"usedNamespaces";a:2:{s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";}s:7:"typemap";a:6:{s:32:"http://www.w3.org/2001/XMLSchema";a:43:{s:6:"string";s:6:"string";s:7:"boolean";s:7:"boolean";s:5:"float";s:6:"double";s:6:"double";s:6:"double";s:7:"decimal";s:6:"double";s:8:"duration";s:0:"";s:8:"dateTime";s:6:"string";s:4:"time";s:6:"string";s:4:"date";s:6:"string";s:10:"gYearMonth";s:0:"";s:5:"gYear";s:0:"";s:9:"gMonthDay";s:0:"";s:4:"gDay";s:0:"";s:6:"gMonth";s:0:"";s:9:"hexBinary";s:6:"string";s:12:"base64Binary";s:6:"string";s:7:"anyType";s:6:"string";s:13:"anySimpleType";s:6:"string";s:16:"normalizedString";s:6:"string";s:5:"token";s:6:"string";s:8:"language";s:0:"";s:7:"NMTOKEN";s:0:"";s:8:"NMTOKENS";s:0:"";s:4:"Name";s:0:"";s:6:"NCName";s:0:"";s:2:"ID";s:0:"";s:5:"IDREF";s:0:"";s:6:"IDREFS";s:0:"";s:6:"ENTITY";s:0:"";s:8:"ENTITIES";s:0:"";s:7:"integer";s:7:"integer";s:18:"nonPositiveInteger";s:7:"integer";s:15:"negativeInteger";s:7:"integer";s:4:"long";s:7:"integer";s:3:"int";s:7:"integer";s:5:"short";s:7:"integer";s:4:"byte";s:7:"integer";s:18:"nonNegativeInteger";s:7:"integer";s:12:"unsignedLong";s:0:"";s:11:"unsignedInt";s:0:"";s:13:"unsignedShort";s:0:"";s:12:"unsignedByte";s:0:"";s:15:"positiveInteger";s:0:"";}s:35:"http://www.w3.org/2000/10/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:32:"http://www.w3.org/1999/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:26:"http://soapinterop.org/xsd";a:1:{s:10:"SOAPStruct";s:6:"struct";}s:41:"http://schemas.xmlsoap.org/soap/encoding/";a:3:{s:6:"base64";s:6:"string";s:5:"array";s:5:"array";s:5:"Array";s:5:"array";}s:30:"http://xml.apache.org/xml-soap";a:1:{i:0;s:3:"Map";}}s:11:"xmlEntities";a:5:{s:4:"quot";s:1:""";s:3:"amp";s:1:"&";s:2:"lt";s:1:"<";s:2:"gt";s:1:">";s:4:"apos";s:1:"'";}}}}s:13:"currentSchema";r:1227;s:7:"message";a:22:{i:0;a:1:{s:5:"cdata";s:49:"
+  
+    
+    
+    
+    
+      
+    
+    
+        ";}i:1;a:1:{s:5:"cdata";s:0:"";}i:2;a:1:{s:5:"cdata";s:3:"
+  ";}i:3;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:4;a:1:{s:5:"cdata";s:3:"
+  ";}i:5;a:1:{s:5:"cdata";s:5:"
+    ";}i:6;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:7;a:1:{s:5:"cdata";s:3:"
+  ";}i:8;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:9;a:1:{s:5:"cdata";s:7:"
+      ";}i:10;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:11;a:1:{s:5:"cdata";s:3:"
+  ";}i:12;a:1:{s:5:"cdata";s:5:"
+    ";}i:13;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:14;a:1:{s:5:"cdata";s:7:"
+      ";}i:15;a:1:{s:5:"cdata";s:7:"
+      ";}i:16;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:17;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:18;a:1:{s:5:"cdata";s:7:"
+      ";}i:19;a:1:{s:5:"cdata";s:1:"
+";}i:20;a:1:{s:5:"cdata";s:3:"
+  ";}i:21;a:1:{s:5:"cdata";s:5:"
+    ";}}s:12:"complexTypes";a:0:{}s:8:"messages";a:2:{s:24:"getLocationsListResponse";a:1:{s:22:"getLocationsListReturn";s:73:"http://service.localization.ws.viamichelin.com:ArrayOf_tns2_FindLocations";}s:23:"getLocationsListRequest";a:2:{s:7:"request";s:55:"http://localization.ws.viamichelin.com:GeocodingRequest";s:5:"check";s:39:"http://www.w3.org/2001/XMLSchema:string";}}s:14:"currentMessage";s:23:"getLocationsListRequest";s:16:"currentOperation";s:16:"getLocationsList";s:9:"portTypes";a:1:{s:9:"Geocoding";a:1:{s:16:"getLocationsList";a:4:{s:14:"parameterOrder";s:13:"request check";s:5:"input";a:1:{s:7:"message";s:23:"getLocationsListRequest";}s:6:"output";a:1:{s:7:"message";s:24:"getLocationsListResponse";}s:7:"binding";a:1:{s:7:"message";s:0:"";}}}}s:15:"currentPortType";s:9:"Geocoding";s:8:"bindings";a:1:{s:20:"GeocodingSoapBinding";a:7:{s:8:"portType";s:9:"Geocoding";s:6:"prefix";s:8:"wsdlsoap";s:5:"style";s:3:"rpc";s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:10:"operations";a:1:{s:16:"getLocationsList";a:9:{s:4:"name";s:16:"getLocationsList";s:7:"binding";s:20:"GeocodingSoapBinding";s:8:"endpoint";s:51:"http://www.viamichelin.com:81/ws/services/Geocoding";s:10:"soapAction";s:0:"";s:5:"input";a:5:{s:13:"encodingStyle";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:9:"namespace";s:46:"http://service.localization.ws.viamichelin.com";s:3:"use";s:7:"encoded";s:7:"message";s:23:"getLocationsListRequest";s:5:"parts";a:2:{s:7:"request";s:55:"http://localization.ws.viamichelin.com:GeocodingRequest";s:5:"check";s:39:"http://www.w3.org/2001/XMLSchema:string";}}s:6:"output";a:5:{s:13:"encodingStyle";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:9:"namespace";s:46:"http://service.localization.ws.viamichelin.com";s:3:"use";s:7:"encoded";s:7:"message";s:24:"getLocationsListResponse";s:5:"parts";a:1:{s:22:"getLocationsListReturn";s:73:"http://service.localization.ws.viamichelin.com:ArrayOf_tns2_FindLocations";}}s:5:"style";s:3:"rpc";s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:13:"documentation";s:0:"";}}s:11:"bindingType";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";s:8:"endpoint";s:51:"http://www.viamichelin.com:81/ws/services/Geocoding";}}s:14:"currentBinding";s:20:"GeocodingSoapBinding";s:5:"ports";a:1:{s:9:"Geocoding";a:3:{s:7:"binding";s:20:"GeocodingSoapBinding";s:8:"location";s:51:"http://www.viamichelin.com:81/ws/services/Geocoding";s:11:"bindingType";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";}}s:11:"currentPort";s:9:"Geocoding";s:6:"opData";a:0:{}s:6:"status";s:7:"service";s:13:"documentation";b:0;s:8:"endpoint";s:0:"";s:6:"import";a:0:{}s:6:"parser";i:0;s:8:"position";i:22;s:5:"depth";i:-4;s:11:"depth_array";a:5:{i:0;i:18;i:1;i:1;i:-3;i:19;i:-2;i:20;i:-1;i:21;}s:9:"proxyhost";s:0:"";s:9:"proxyport";s:0:"";s:13:"proxyusername";s:0:"";s:13:"proxypassword";s:0:"";s:7:"timeout";i:0;s:16:"response_timeout";i:30;s:12:"curl_options";a:0:{}s:8:"use_curl";s:1:"0";s:8:"username";s:0:"";s:8:"password";s:0:"";s:8:"authtype";s:0:"";s:11:"certRequest";a:0:{}s:5:"title";s:6:"NuSOAP";s:7:"version";s:5:"0.9.5";s:8:"revision";s:18:"$Revision: 1.123 $";s:9:"error_str";s:0:"";s:9:"debug_str";s:63054:"2010-06-15 11:16:01.967663 wsdl: ctor wsdl=http://www.viamichelin.com/ws/services/Geocoding?wsdl timeout=0 response_timeout=30
+2010-06-15 11:16:01.967955 wsdl: parse and process WSDL path=http://www.viamichelin.com/ws/services/Geocoding?wsdl
+2010-06-15 11:16:01.968177 wsdl: parse WSDL at path=http://www.viamichelin.com/ws/services/Geocoding?wsdl
+2010-06-15 11:16:01.968397 wsdl: getting WSDL http(s) URL http://www.viamichelin.com/ws/services/Geocoding?wsdl
+2010-06-15 11:16:01.968701 soap_transport_http: ctor url=http://www.viamichelin.com/ws/services/Geocoding?wsdl use_curl=0 curl_options:
+array(0) {
+}
+2010-06-15 11:16:01.968951 soap_transport_http: parsed URL scheme = http
+2010-06-15 11:16:01.969165 soap_transport_http: parsed URL host = www.viamichelin.com
+2010-06-15 11:16:01.969373 soap_transport_http: parsed URL path = /ws/services/Geocoding
+2010-06-15 11:16:01.969582 soap_transport_http: parsed URL query = wsdl
+2010-06-15 11:16:01.969804 soap_transport_http: set header Host: www.viamichelin.com
+2010-06-15 11:16:01.970040 soap_transport_http: set header User-Agent: NuSOAP/0.9.5 (1.123)
+2010-06-15 11:16:01.970265 soap_transport_http: set header Accept-Encoding: gzip, deflate
+2010-06-15 11:16:01.970478 soap_transport_http: set header Connection: close
+2010-06-15 11:16:01.970694 soap_transport_http: entered send() with data of length: 0
+2010-06-15 11:16:01.970920 soap_transport_http: connect connection_timeout 0, response_timeout 30, scheme http, host www.viamichelin.com, port 80
+2010-06-15 11:16:01.971142 soap_transport_http: calling fsockopen with host www.viamichelin.com connection_timeout 0
+2010-06-15 11:16:02.038446 soap_transport_http: set response timeout to 30
+2010-06-15 11:16:02.038708 soap_transport_http: socket connected
+2010-06-15 11:16:02.038947 soap_transport_http: HTTP request: GET /ws/services/Geocoding?wsdl HTTP/1.1
+2010-06-15 11:16:02.039158 soap_transport_http: HTTP header: Host: www.viamichelin.com
+2010-06-15 11:16:02.039363 soap_transport_http: HTTP header: User-Agent: NuSOAP/0.9.5 (1.123)
+2010-06-15 11:16:02.039568 soap_transport_http: HTTP header: Accept-Encoding: gzip, deflate
+2010-06-15 11:16:02.039773 soap_transport_http: HTTP header: Connection: close
+2010-06-15 11:16:02.040212 soap_transport_http: wrote data to socket, length = 156
+2010-06-15 11:16:02.075196 soap_transport_http: read line of 17 bytes: HTTP/1.1 200 OK
+2010-06-15 11:16:02.075471 soap_transport_http: read line of 37 bytes: Date: Tue, 15 Jun 2010 09:14:50 GMT
+2010-06-15 11:16:02.075684 soap_transport_http: read line of 25 bytes: Server: IBM_HTTP_Server
+2010-06-15 11:16:02.075896 soap_transport_http: read line of 28 bytes: Transfer-Encoding: chunked
+2010-06-15 11:16:02.076105 soap_transport_http: read line of 43 bytes: Content-Type: text/xml;charset=ISO-8859-1
+2010-06-15 11:16:02.076440 soap_transport_http: read line of 25 bytes: Content-Language: en-US
+2010-06-15 11:16:02.076651 soap_transport_http: read line of 19 bytes: Connection: close
+2010-06-15 11:16:02.076959 soap_transport_http: read line of 8 bytes: Host:
+2010-06-15 11:16:02.077170 soap_transport_http: read line of 2 bytes: 
+2010-06-15 11:16:02.077389 soap_transport_http: found end of headers after length 204
+2010-06-15 11:16:02.077814 soap_transport_http: want to read chunked content
+2010-06-15 11:16:02.078066 soap_transport_http: read chunk line of 6 bytes
+2010-06-15 11:16:02.078281 soap_transport_http: chunk length 8594
+2010-06-15 11:16:02.105496 soap_transport_http: read buffer of 5609 bytes
+2010-06-15 11:16:02.106415 soap_transport_http: read buffer of 1448 bytes
+2010-06-15 11:16:02.106978 soap_transport_http: read buffer of 1537 bytes
+2010-06-15 11:16:02.107202 soap_transport_http: read chunk terminator of 2 bytes
+2010-06-15 11:16:02.107413 soap_transport_http: read chunk line of 3 bytes
+2010-06-15 11:16:02.107621 soap_transport_http: chunk length 0
+2010-06-15 11:16:02.107828 soap_transport_http: read body of length 8594
+2010-06-15 11:16:02.108247 soap_transport_http: received a total of 8798 bytes of data from server
+2010-06-15 11:16:02.108611 soap_transport_http: closed socket
+2010-06-15 11:16:02.108852 soap_transport_http: No Content-Encoding header
+2010-06-15 11:16:02.109080 soap_transport_http: end of send()
+2010-06-15 11:16:02.109326 wsdl: got WSDL URL
+2010-06-15 11:16:02.109534 wsdl: Parse WSDL
+2010-06-15 11:16:02.110324 wsdl: Parsing WSDL schema
+2010-06-15 11:16:02.110610 nusoap_xmlschema: nusoap_xmlschema class instantiated, inside constructor
+2010-06-15 11:16:02.110993 nusoap_xmlschema: <http://localization.ws.viamichelin.com> import namespace http://schemas.xmlsoap.org/soap/encoding/
+2010-06-15 11:16:02.111298 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing named complexType InputAddress
+2010-06-15 11:16:02.111648 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element address of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.111871 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element address to complexType InputAddress
+2010-06-15 11:16:02.112113 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element address
+2010-06-15 11:16:02.112409 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element cityName of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.112636 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element cityName to complexType InputAddress
+2010-06-15 11:16:02.112876 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element cityName
+2010-06-15 11:16:02.113172 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element countryCode of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.113393 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element countryCode to complexType InputAddress
+2010-06-15 11:16:02.113633 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element countryCode
+2010-06-15 11:16:02.113930 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element postalCode of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.114152 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element postalCode to complexType InputAddress
+2010-06-15 11:16:02.114394 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element postalCode
+2010-06-15 11:16:02.114687 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element stateName of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.114906 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element stateName to complexType InputAddress
+2010-06-15 11:16:02.115147 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element stateName
+2010-06-15 11:16:02.115398 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing complexType InputAddress
+2010-06-15 11:16:02.115662 nusoap_xmlschema: <http://localization.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(12) "InputAddress"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(5) {
+    ["address"]=>
+    array(4) {
+      ["name"]=>
+      string(7) "address"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["cityName"]=>
+    array(4) {
+      ["name"]=>
+      string(8) "cityName"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["countryCode"]=>
+    array(4) {
+      ["name"]=>
+      string(11) "countryCode"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["postalCode"]=>
+    array(4) {
+      ["name"]=>
+      string(10) "postalCode"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["stateName"]=>
+    array(4) {
+      ["name"]=>
+      string(9) "stateName"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.115926 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing named complexType GeocodingRequest
+2010-06-15 11:16:02.116281 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element addressesList of type http://service.localization.ws.viamichelin.com:ArrayOf_tns2_InputAddress
+2010-06-15 11:16:02.116500 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element addressesList to complexType GeocodingRequest
+2010-06-15 11:16:02.116744 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element addressesList
+2010-06-15 11:16:02.116994 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing complexType GeocodingRequest
+2010-06-15 11:16:02.117225 nusoap_xmlschema: <http://localization.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(16) "GeocodingRequest"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(1) {
+    ["addressesList"]=>
+    array(4) {
+      ["name"]=>
+      string(13) "addressesList"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(72) "http://service.localization.ws.viamichelin.com:ArrayOf_tns2_InputAddress"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.117485 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing named complexType PoiId
+2010-06-15 11:16:02.117829 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element id of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.118050 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element id to complexType PoiId
+2010-06-15 11:16:02.118292 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element id
+2010-06-15 11:16:02.118586 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element language of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.118807 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element language to complexType PoiId
+2010-06-15 11:16:02.119047 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element language
+2010-06-15 11:16:02.119342 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element type of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.119562 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element type to complexType PoiId
+2010-06-15 11:16:02.119879 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element type
+2010-06-15 11:16:02.120134 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing complexType PoiId
+2010-06-15 11:16:02.120384 nusoap_xmlschema: <http://localization.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(5) "PoiId"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(3) {
+    ["id"]=>
+    array(4) {
+      ["name"]=>
+      string(2) "id"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["language"]=>
+    array(4) {
+      ["name"]=>
+      string(8) "language"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["type"]=>
+    array(4) {
+      ["name"]=>
+      string(4) "type"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.120646 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing named complexType PoiDatasheet
+2010-06-15 11:16:02.120997 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element email of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.121219 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element email to complexType PoiDatasheet
+2010-06-15 11:16:02.121460 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element email
+2010-06-15 11:16:02.121753 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element fax of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.121971 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element fax to complexType PoiDatasheet
+2010-06-15 11:16:02.122213 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element fax
+2010-06-15 11:16:02.122493 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element geocodingLevel of type http://www.w3.org/2001/XMLSchema:int
+2010-06-15 11:16:02.122712 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element geocodingLevel to complexType PoiDatasheet
+2010-06-15 11:16:02.122952 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element geocodingLevel
+2010-06-15 11:16:02.123232 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element iconId of type http://www.w3.org/2001/XMLSchema:int
+2010-06-15 11:16:02.123451 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element iconId to complexType PoiDatasheet
+2010-06-15 11:16:02.123691 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element iconId
+2010-06-15 11:16:02.123984 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element intlFax of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.124203 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element intlFax to complexType PoiDatasheet
+2010-06-15 11:16:02.124443 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element intlFax
+2010-06-15 11:16:02.124736 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element intlTelephone1 of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.124954 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element intlTelephone1 to complexType PoiDatasheet
+2010-06-15 11:16:02.125192 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element intlTelephone1
+2010-06-15 11:16:02.125483 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element intlTelephone2 of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.125701 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element intlTelephone2 to complexType PoiDatasheet
+2010-06-15 11:16:02.125942 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element intlTelephone2
+2010-06-15 11:16:02.126236 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element telephone1 of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.126455 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element telephone1 to complexType PoiDatasheet
+2010-06-15 11:16:02.126696 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element telephone1
+2010-06-15 11:16:02.126990 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element telephone2 of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.127209 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element telephone2 to complexType PoiDatasheet
+2010-06-15 11:16:02.127456 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element telephone2
+2010-06-15 11:16:02.127750 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element web of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.127969 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element web to complexType PoiDatasheet
+2010-06-15 11:16:02.128210 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element web
+2010-06-15 11:16:02.128460 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing complexType PoiDatasheet
+2010-06-15 11:16:02.128749 nusoap_xmlschema: <http://localization.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(12) "PoiDatasheet"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(10) {
+    ["email"]=>
+    array(4) {
+      ["name"]=>
+      string(5) "email"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["fax"]=>
+    array(4) {
+      ["name"]=>
+      string(3) "fax"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["geocodingLevel"]=>
+    array(3) {
+      ["name"]=>
+      string(14) "geocodingLevel"
+      ["type"]=>
+      string(36) "http://www.w3.org/2001/XMLSchema:int"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["iconId"]=>
+    array(3) {
+      ["name"]=>
+      string(6) "iconId"
+      ["type"]=>
+      string(36) "http://www.w3.org/2001/XMLSchema:int"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["intlFax"]=>
+    array(4) {
+      ["name"]=>
+      string(7) "intlFax"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["intlTelephone1"]=>
+    array(4) {
+      ["name"]=>
+      string(14) "intlTelephone1"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["intlTelephone2"]=>
+    array(4) {
+      ["name"]=>
+      string(14) "intlTelephone2"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["telephone1"]=>
+    array(4) {
+      ["name"]=>
+      string(10) "telephone1"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["telephone2"]=>
+    array(4) {
+      ["name"]=>
+      string(10) "telephone2"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["web"]=>
+    array(4) {
+      ["name"]=>
+      string(3) "web"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.129012 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing named complexType PoiDescriptionList
+2010-06-15 11:16:02.129371 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element descriptions of type http://service.localization.ws.viamichelin.com:ArrayOf_xsd_string
+2010-06-15 11:16:02.129592 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element descriptions to complexType PoiDescriptionList
+2010-06-15 11:16:02.129833 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element descriptions
+2010-06-15 11:16:02.130129 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element translatedName of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.130349 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element translatedName to complexType PoiDescriptionList
+2010-06-15 11:16:02.130589 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element translatedName
+2010-06-15 11:16:02.130839 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing complexType PoiDescriptionList
+2010-06-15 11:16:02.131079 nusoap_xmlschema: <http://localization.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(18) "PoiDescriptionList"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(2) {
+    ["descriptions"]=>
+    array(4) {
+      ["name"]=>
+      string(12) "descriptions"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(65) "http://service.localization.ws.viamichelin.com:ArrayOf_xsd_string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["translatedName"]=>
+    array(4) {
+      ["name"]=>
+      string(14) "translatedName"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.131336 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing named complexType PoiMetaNumList
+2010-06-15 11:16:02.131681 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element metaNum of type http://service.localization.ws.viamichelin.com:ArrayOf_tns4_Integer
+2010-06-15 11:16:02.131900 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element metaNum to complexType PoiMetaNumList
+2010-06-15 11:16:02.132142 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element metaNum
+2010-06-15 11:16:02.132392 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing complexType PoiMetaNumList
+2010-06-15 11:16:02.132620 nusoap_xmlschema: <http://localization.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(14) "PoiMetaNumList"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(1) {
+    ["metaNum"]=>
+    array(4) {
+      ["name"]=>
+      string(7) "metaNum"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(67) "http://service.localization.ws.viamichelin.com:ArrayOf_tns4_Integer"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.132875 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing named complexType PoiMetaStringList
+2010-06-15 11:16:02.133218 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element metaString of type http://service.localization.ws.viamichelin.com:ArrayOf_xsd_string
+2010-06-15 11:16:02.133437 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element metaString to complexType PoiMetaStringList
+2010-06-15 11:16:02.133677 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element metaString
+2010-06-15 11:16:02.133927 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing complexType PoiMetaStringList
+2010-06-15 11:16:02.134159 nusoap_xmlschema: <http://localization.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(17) "PoiMetaStringList"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(1) {
+    ["metaString"]=>
+    array(4) {
+      ["name"]=>
+      string(10) "metaString"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(65) "http://service.localization.ws.viamichelin.com:ArrayOf_xsd_string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.134425 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing named complexType Poi
+2010-06-15 11:16:02.134768 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element datasheet of type http://localization.ws.viamichelin.com:PoiDatasheet
+2010-06-15 11:16:02.134989 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element datasheet to complexType Poi
+2010-06-15 11:16:02.135229 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element datasheet
+2010-06-15 11:16:02.135983 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element descriptionList of type http://localization.ws.viamichelin.com:PoiDescriptionList
+2010-06-15 11:16:02.136208 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element descriptionList to complexType Poi
+2010-06-15 11:16:02.136459 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element descriptionList
+2010-06-15 11:16:02.136965 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element distanceFromSearchCenter of type http://www.w3.org/2001/XMLSchema:int
+2010-06-15 11:16:02.137212 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element distanceFromSearchCenter to complexType Poi
+2010-06-15 11:16:02.137504 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element distanceFromSearchCenter
+2010-06-15 11:16:02.137824 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element metanumList of type http://localization.ws.viamichelin.com:PoiMetaNumList
+2010-06-15 11:16:02.138050 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element metanumList to complexType Poi
+2010-06-15 11:16:02.138455 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element metanumList
+2010-06-15 11:16:02.138761 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element metastringList of type http://localization.ws.viamichelin.com:PoiMetaStringList
+2010-06-15 11:16:02.138989 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element metastringList to complexType Poi
+2010-06-15 11:16:02.139230 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element metastringList
+2010-06-15 11:16:02.139532 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element name of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.139756 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element name to complexType Poi
+2010-06-15 11:16:02.139997 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element name
+2010-06-15 11:16:02.140323 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element poiID of type http://localization.ws.viamichelin.com:PoiId
+2010-06-15 11:16:02.140545 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element poiID to complexType Poi
+2010-06-15 11:16:02.140791 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element poiID
+2010-06-15 11:16:02.141042 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing complexType Poi
+2010-06-15 11:16:02.141377 nusoap_xmlschema: <http://localization.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(3) "Poi"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(7) {
+    ["datasheet"]=>
+    array(4) {
+      ["name"]=>
+      string(9) "datasheet"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(51) "http://localization.ws.viamichelin.com:PoiDatasheet"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["descriptionList"]=>
+    array(4) {
+      ["name"]=>
+      string(15) "descriptionList"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(57) "http://localization.ws.viamichelin.com:PoiDescriptionList"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["distanceFromSearchCenter"]=>
+    array(3) {
+      ["name"]=>
+      string(24) "distanceFromSearchCenter"
+      ["type"]=>
+      string(36) "http://www.w3.org/2001/XMLSchema:int"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["metanumList"]=>
+    array(4) {
+      ["name"]=>
+      string(11) "metanumList"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(53) "http://localization.ws.viamichelin.com:PoiMetaNumList"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["metastringList"]=>
+    array(4) {
+      ["name"]=>
+      string(14) "metastringList"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(56) "http://localization.ws.viamichelin.com:PoiMetaStringList"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["name"]=>
+    array(4) {
+      ["name"]=>
+      string(4) "name"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["poiID"]=>
+    array(4) {
+      ["name"]=>
+      string(5) "poiID"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(44) "http://localization.ws.viamichelin.com:PoiId"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.141653 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing named complexType Address
+2010-06-15 11:16:02.142011 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element cityLabel of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.142233 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element cityLabel to complexType Address
+2010-06-15 11:16:02.142475 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element cityLabel
+2010-06-15 11:16:02.142781 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element countryCode of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.143007 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element countryCode to complexType Address
+2010-06-15 11:16:02.143249 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element countryCode
+2010-06-15 11:16:02.143549 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element countryLabel of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.143768 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element countryLabel to complexType Address
+2010-06-15 11:16:02.144015 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element countryLabel
+2010-06-15 11:16:02.144543 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element districtLabel of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.144807 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element districtLabel to complexType Address
+2010-06-15 11:16:02.145072 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element districtLabel
+2010-06-15 11:16:02.145373 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element formattedAddressLine of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.145596 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element formattedAddressLine to complexType Address
+2010-06-15 11:16:02.145841 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element formattedAddressLine
+2010-06-15 11:16:02.146303 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element formattedCityAddressLine of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.146550 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element formattedCityAddressLine to complexType Address
+2010-06-15 11:16:02.146798 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element formattedCityAddressLine
+2010-06-15 11:16:02.147101 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element gatheringLabel of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.147366 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element gatheringLabel to complexType Address
+2010-06-15 11:16:02.147615 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element gatheringLabel
+2010-06-15 11:16:02.147929 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element officialCountryCode of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.148155 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element officialCountryCode to complexType Address
+2010-06-15 11:16:02.148470 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element officialCountryCode
+2010-06-15 11:16:02.148776 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element stateLabel of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.148999 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element stateLabel to complexType Address
+2010-06-15 11:16:02.149247 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element stateLabel
+2010-06-15 11:16:02.149542 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element streetLabel of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.149767 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element streetLabel to complexType Address
+2010-06-15 11:16:02.150225 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element streetLabel
+2010-06-15 11:16:02.150625 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element streetNumber of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.150852 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element streetNumber to complexType Address
+2010-06-15 11:16:02.151112 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element streetNumber
+2010-06-15 11:16:02.151408 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element zipCode of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.151633 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element zipCode to complexType Address
+2010-06-15 11:16:02.151875 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element zipCode
+2010-06-15 11:16:02.152269 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing complexType Address
+2010-06-15 11:16:02.152584 nusoap_xmlschema: <http://localization.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(7) "Address"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(12) {
+    ["cityLabel"]=>
+    array(4) {
+      ["name"]=>
+      string(9) "cityLabel"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["countryCode"]=>
+    array(4) {
+      ["name"]=>
+      string(11) "countryCode"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["countryLabel"]=>
+    array(4) {
+      ["name"]=>
+      string(12) "countryLabel"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["districtLabel"]=>
+    array(4) {
+      ["name"]=>
+      string(13) "districtLabel"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["formattedAddressLine"]=>
+    array(4) {
+      ["name"]=>
+      string(20) "formattedAddressLine"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["formattedCityAddressLine"]=>
+    array(4) {
+      ["name"]=>
+      string(24) "formattedCityAddressLine"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["gatheringLabel"]=>
+    array(4) {
+      ["name"]=>
+      string(14) "gatheringLabel"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["officialCountryCode"]=>
+    array(4) {
+      ["name"]=>
+      string(19) "officialCountryCode"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["stateLabel"]=>
+    array(4) {
+      ["name"]=>
+      string(10) "stateLabel"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["streetLabel"]=>
+    array(4) {
+      ["name"]=>
+      string(11) "streetLabel"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["streetNumber"]=>
+    array(4) {
+      ["name"]=>
+      string(12) "streetNumber"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["zipCode"]=>
+    array(4) {
+      ["name"]=>
+      string(7) "zipCode"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.152870 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing named complexType Location
+2010-06-15 11:16:02.153257 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element address of type http://localization.ws.viamichelin.com:Address
+2010-06-15 11:16:02.153481 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element address to complexType Location
+2010-06-15 11:16:02.153729 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element address
+2010-06-15 11:16:02.154220 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element geoCoordinates of type http://geo.ws.viamichelin.com:GeoCoordinates
+2010-06-15 11:16:02.154467 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element geoCoordinates to complexType Location
+2010-06-15 11:16:02.154717 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element geoCoordinates
+2010-06-15 11:16:02.155021 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element id of type http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.155246 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element id to complexType Location
+2010-06-15 11:16:02.155486 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element id
+2010-06-15 11:16:02.155784 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element poi of type http://localization.ws.viamichelin.com:Poi
+2010-06-15 11:16:02.156030 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element poi to complexType Location
+2010-06-15 11:16:02.156270 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element poi
+2010-06-15 11:16:02.156556 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element type of type http://www.w3.org/2001/XMLSchema:int
+2010-06-15 11:16:02.156814 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element type to complexType Location
+2010-06-15 11:16:02.157065 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element type
+2010-06-15 11:16:02.157315 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing complexType Location
+2010-06-15 11:16:02.157574 nusoap_xmlschema: <http://localization.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(8) "Location"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(5) {
+    ["address"]=>
+    array(4) {
+      ["name"]=>
+      string(7) "address"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(46) "http://localization.ws.viamichelin.com:Address"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["geoCoordinates"]=>
+    array(4) {
+      ["name"]=>
+      string(14) "geoCoordinates"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(44) "http://geo.ws.viamichelin.com:GeoCoordinates"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["id"]=>
+    array(4) {
+      ["name"]=>
+      string(2) "id"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:string"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["poi"]=>
+    array(4) {
+      ["name"]=>
+      string(3) "poi"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(42) "http://localization.ws.viamichelin.com:Poi"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["type"]=>
+    array(3) {
+      ["name"]=>
+      string(4) "type"
+      ["type"]=>
+      string(36) "http://www.w3.org/2001/XMLSchema:int"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.157833 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing named complexType FindLocation
+2010-06-15 11:16:02.158174 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element addressIncoherenceDegree of type http://www.w3.org/2001/XMLSchema:int
+2010-06-15 11:16:02.158395 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element addressIncoherenceDegree to complexType FindLocation
+2010-06-15 11:16:02.158634 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element addressIncoherenceDegree
+2010-06-15 11:16:02.158920 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element cityIncoherenceDegree of type http://www.w3.org/2001/XMLSchema:int
+2010-06-15 11:16:02.159139 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element cityIncoherenceDegree to complexType FindLocation
+2010-06-15 11:16:02.159384 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element cityIncoherenceDegree
+2010-06-15 11:16:02.159677 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element foundLocation of type http://localization.ws.viamichelin.com:Location
+2010-06-15 11:16:02.159920 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element foundLocation to complexType FindLocation
+2010-06-15 11:16:02.160162 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element foundLocation
+2010-06-15 11:16:02.160447 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element score of type http://www.w3.org/2001/XMLSchema:double
+2010-06-15 11:16:02.160667 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element score to complexType FindLocation
+2010-06-15 11:16:02.160969 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element score
+2010-06-15 11:16:02.161220 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing complexType FindLocation
+2010-06-15 11:16:02.161470 nusoap_xmlschema: <http://localization.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(12) "FindLocation"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(4) {
+    ["addressIncoherenceDegree"]=>
+    array(3) {
+      ["name"]=>
+      string(24) "addressIncoherenceDegree"
+      ["type"]=>
+      string(36) "http://www.w3.org/2001/XMLSchema:int"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["cityIncoherenceDegree"]=>
+    array(3) {
+      ["name"]=>
+      string(21) "cityIncoherenceDegree"
+      ["type"]=>
+      string(36) "http://www.w3.org/2001/XMLSchema:int"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["foundLocation"]=>
+    array(4) {
+      ["name"]=>
+      string(13) "foundLocation"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(47) "http://localization.ws.viamichelin.com:Location"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["score"]=>
+    array(3) {
+      ["name"]=>
+      string(5) "score"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:double"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.161731 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing named complexType FindLocations
+2010-06-15 11:16:02.162074 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element errorCode of type http://www.w3.org/2001/XMLSchema:int
+2010-06-15 11:16:02.162295 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element errorCode to complexType FindLocations
+2010-06-15 11:16:02.162539 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element errorCode
+2010-06-15 11:16:02.162835 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element results of type http://service.localization.ws.viamichelin.com:ArrayOf_tns2_FindLocation
+2010-06-15 11:16:02.163060 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element results to complexType FindLocations
+2010-06-15 11:16:02.163301 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element results
+2010-06-15 11:16:02.163584 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element size of type http://www.w3.org/2001/XMLSchema:int
+2010-06-15 11:16:02.163848 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element size to complexType FindLocations
+2010-06-15 11:16:02.164122 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element size
+2010-06-15 11:16:02.164414 nusoap_xmlschema: <http://localization.ws.viamichelin.com> processing typed element topScore of type http://www.w3.org/2001/XMLSchema:double
+2010-06-15 11:16:02.164633 nusoap_xmlschema: <http://localization.ws.viamichelin.com> add element topScore to complexType FindLocations
+2010-06-15 11:16:02.164878 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing element topScore
+2010-06-15 11:16:02.165128 nusoap_xmlschema: <http://localization.ws.viamichelin.com> done processing complexType FindLocations
+2010-06-15 11:16:02.165379 nusoap_xmlschema: <http://localization.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(13) "FindLocations"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(4) {
+    ["errorCode"]=>
+    array(3) {
+      ["name"]=>
+      string(9) "errorCode"
+      ["type"]=>
+      string(36) "http://www.w3.org/2001/XMLSchema:int"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["results"]=>
+    array(4) {
+      ["name"]=>
+      string(7) "results"
+      ["nillable"]=>
+      string(4) "true"
+      ["type"]=>
+      string(72) "http://service.localization.ws.viamichelin.com:ArrayOf_tns2_FindLocation"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["size"]=>
+    array(3) {
+      ["name"]=>
+      string(4) "size"
+      ["type"]=>
+      string(36) "http://www.w3.org/2001/XMLSchema:int"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["topScore"]=>
+    array(3) {
+      ["name"]=>
+      string(8) "topScore"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:double"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.165629 wsdl: Parsing WSDL schema done
+2010-06-15 11:16:02.165900 wsdl: Parsing WSDL schema
+2010-06-15 11:16:02.166126 nusoap_xmlschema: nusoap_xmlschema class instantiated, inside constructor
+2010-06-15 11:16:02.166478 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> import namespace http://schemas.xmlsoap.org/soap/encoding/
+2010-06-15 11:16:02.166774 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> processing named complexType ArrayOf_tns2_InputAddress
+2010-06-15 11:16:02.167025 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> do nothing for element complexContent
+2010-06-15 11:16:02.167294 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> restriction http://schemas.xmlsoap.org/soap/encoding/:Array
+2010-06-15 11:16:02.167600 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> parsing attribute:
+array(2) {
+  ["ref"]=>
+  string(51) "http://schemas.xmlsoap.org/soap/encoding/:arrayType"
+  ["http://schemas.xmlsoap.org/wsdl/:arrayType"]=>
+  string(53) "http://localization.ws.viamichelin.com:InputAddress[]"
+}
+2010-06-15 11:16:02.167964 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> done processing complexType ArrayOf_tns2_InputAddress
+2010-06-15 11:16:02.168195 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> array(7) {
+  ["name"]=>
+  string(25) "ArrayOf_tns2_InputAddress"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(5) "array"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["restrictionBase"]=>
+  string(47) "http://schemas.xmlsoap.org/soap/encoding/:Array"
+  ["attrs"]=>
+  array(1) {
+    ["http://localization.ws.viamichelin.com:InputAddress[]"]=>
+    array(3) {
+      ["ref"]=>
+      string(51) "http://schemas.xmlsoap.org/soap/encoding/:arrayType"
+      ["http://schemas.xmlsoap.org/wsdl/:arrayType"]=>
+      string(53) "http://localization.ws.viamichelin.com:InputAddress[]"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+  ["arrayType"]=>
+  string(51) "http://localization.ws.viamichelin.com:InputAddress"
+}
+
+2010-06-15 11:16:02.168452 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> processing named complexType ArrayOf_xsd_string
+2010-06-15 11:16:02.168700 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> do nothing for element complexContent
+2010-06-15 11:16:02.169001 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> restriction http://schemas.xmlsoap.org/soap/encoding/:Array
+2010-06-15 11:16:02.169308 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> parsing attribute:
+array(2) {
+  ["ref"]=>
+  string(51) "http://schemas.xmlsoap.org/soap/encoding/:arrayType"
+  ["http://schemas.xmlsoap.org/wsdl/:arrayType"]=>
+  string(41) "http://www.w3.org/2001/XMLSchema:string[]"
+}
+2010-06-15 11:16:02.169654 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> done processing complexType ArrayOf_xsd_string
+2010-06-15 11:16:02.169885 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> array(7) {
+  ["name"]=>
+  string(18) "ArrayOf_xsd_string"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(5) "array"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["restrictionBase"]=>
+  string(47) "http://schemas.xmlsoap.org/soap/encoding/:Array"
+  ["attrs"]=>
+  array(1) {
+    ["http://www.w3.org/2001/XMLSchema:string[]"]=>
+    array(3) {
+      ["ref"]=>
+      string(51) "http://schemas.xmlsoap.org/soap/encoding/:arrayType"
+      ["http://schemas.xmlsoap.org/wsdl/:arrayType"]=>
+      string(41) "http://www.w3.org/2001/XMLSchema:string[]"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+  ["arrayType"]=>
+  string(39) "http://www.w3.org/2001/XMLSchema:string"
+}
+
+2010-06-15 11:16:02.170141 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> processing named complexType ArrayOf_tns4_Integer
+2010-06-15 11:16:02.170394 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> do nothing for element complexContent
+2010-06-15 11:16:02.170783 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> restriction http://schemas.xmlsoap.org/soap/encoding/:Array
+2010-06-15 11:16:02.171091 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> parsing attribute:
+array(2) {
+  ["ref"]=>
+  string(51) "http://schemas.xmlsoap.org/soap/encoding/:arrayType"
+  ["http://schemas.xmlsoap.org/wsdl/:arrayType"]=>
+  string(42) "http://object.ws.viamichelin.com:Integer[]"
+}
+2010-06-15 11:16:02.171462 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> done processing complexType ArrayOf_tns4_Integer
+2010-06-15 11:16:02.171696 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> array(7) {
+  ["name"]=>
+  string(20) "ArrayOf_tns4_Integer"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(5) "array"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["restrictionBase"]=>
+  string(47) "http://schemas.xmlsoap.org/soap/encoding/:Array"
+  ["attrs"]=>
+  array(1) {
+    ["http://object.ws.viamichelin.com:Integer[]"]=>
+    array(3) {
+      ["ref"]=>
+      string(51) "http://schemas.xmlsoap.org/soap/encoding/:arrayType"
+      ["http://schemas.xmlsoap.org/wsdl/:arrayType"]=>
+      string(42) "http://object.ws.viamichelin.com:Integer[]"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+  ["arrayType"]=>
+  string(40) "http://object.ws.viamichelin.com:Integer"
+}
+
+2010-06-15 11:16:02.171956 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> processing named complexType ArrayOf_tns2_FindLocation
+2010-06-15 11:16:02.172206 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> do nothing for element complexContent
+2010-06-15 11:16:02.172477 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> restriction http://schemas.xmlsoap.org/soap/encoding/:Array
+2010-06-15 11:16:02.172782 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> parsing attribute:
+array(2) {
+  ["ref"]=>
+  string(51) "http://schemas.xmlsoap.org/soap/encoding/:arrayType"
+  ["http://schemas.xmlsoap.org/wsdl/:arrayType"]=>
+  string(53) "http://localization.ws.viamichelin.com:FindLocation[]"
+}
+2010-06-15 11:16:02.173126 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> done processing complexType ArrayOf_tns2_FindLocation
+2010-06-15 11:16:02.173357 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> array(7) {
+  ["name"]=>
+  string(25) "ArrayOf_tns2_FindLocation"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(5) "array"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["restrictionBase"]=>
+  string(47) "http://schemas.xmlsoap.org/soap/encoding/:Array"
+  ["attrs"]=>
+  array(1) {
+    ["http://localization.ws.viamichelin.com:FindLocation[]"]=>
+    array(3) {
+      ["ref"]=>
+      string(51) "http://schemas.xmlsoap.org/soap/encoding/:arrayType"
+      ["http://schemas.xmlsoap.org/wsdl/:arrayType"]=>
+      string(53) "http://localization.ws.viamichelin.com:FindLocation[]"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+  ["arrayType"]=>
+  string(51) "http://localization.ws.viamichelin.com:FindLocation"
+}
+
+2010-06-15 11:16:02.173614 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> processing named complexType ArrayOf_tns2_FindLocations
+2010-06-15 11:16:02.173865 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> do nothing for element complexContent
+2010-06-15 11:16:02.174132 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> restriction http://schemas.xmlsoap.org/soap/encoding/:Array
+2010-06-15 11:16:02.174438 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> parsing attribute:
+array(2) {
+  ["ref"]=>
+  string(51) "http://schemas.xmlsoap.org/soap/encoding/:arrayType"
+  ["http://schemas.xmlsoap.org/wsdl/:arrayType"]=>
+  string(54) "http://localization.ws.viamichelin.com:FindLocations[]"
+}
+2010-06-15 11:16:02.174783 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> done processing complexType ArrayOf_tns2_FindLocations
+2010-06-15 11:16:02.175013 nusoap_xmlschema: <http://service.localization.ws.viamichelin.com> array(7) {
+  ["name"]=>
+  string(26) "ArrayOf_tns2_FindLocations"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(5) "array"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["restrictionBase"]=>
+  string(47) "http://schemas.xmlsoap.org/soap/encoding/:Array"
+  ["attrs"]=>
+  array(1) {
+    ["http://localization.ws.viamichelin.com:FindLocations[]"]=>
+    array(3) {
+      ["ref"]=>
+      string(51) "http://schemas.xmlsoap.org/soap/encoding/:arrayType"
+      ["http://schemas.xmlsoap.org/wsdl/:arrayType"]=>
+      string(54) "http://localization.ws.viamichelin.com:FindLocations[]"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+  ["arrayType"]=>
+  string(52) "http://localization.ws.viamichelin.com:FindLocations"
+}
+
+2010-06-15 11:16:02.175248 wsdl: Parsing WSDL schema done
+2010-06-15 11:16:02.175507 wsdl: Parsing WSDL schema
+2010-06-15 11:16:02.175727 nusoap_xmlschema: nusoap_xmlschema class instantiated, inside constructor
+2010-06-15 11:16:02.176070 nusoap_xmlschema: <http://object.ws.viamichelin.com> import namespace http://schemas.xmlsoap.org/soap/encoding/
+2010-06-15 11:16:02.176365 nusoap_xmlschema: <http://object.ws.viamichelin.com> processing named complexType Integer
+2010-06-15 11:16:02.176695 nusoap_xmlschema: <http://object.ws.viamichelin.com> processing typed element value of type http://www.w3.org/2001/XMLSchema:int
+2010-06-15 11:16:02.176917 nusoap_xmlschema: <http://object.ws.viamichelin.com> add element value to complexType Integer
+2010-06-15 11:16:02.177158 nusoap_xmlschema: <http://object.ws.viamichelin.com> done processing element value
+2010-06-15 11:16:02.177409 nusoap_xmlschema: <http://object.ws.viamichelin.com> done processing complexType Integer
+2010-06-15 11:16:02.177657 nusoap_xmlschema: <http://object.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(7) "Integer"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(1) {
+    ["value"]=>
+    array(3) {
+      ["name"]=>
+      string(5) "value"
+      ["type"]=>
+      string(36) "http://www.w3.org/2001/XMLSchema:int"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.177891 wsdl: Parsing WSDL schema done
+2010-06-15 11:16:02.178128 wsdl: Parsing WSDL schema
+2010-06-15 11:16:02.178344 nusoap_xmlschema: nusoap_xmlschema class instantiated, inside constructor
+2010-06-15 11:16:02.178679 nusoap_xmlschema: <http://geo.ws.viamichelin.com> import namespace http://schemas.xmlsoap.org/soap/encoding/
+2010-06-15 11:16:02.178972 nusoap_xmlschema: <http://geo.ws.viamichelin.com> processing named complexType GeoCoordinates
+2010-06-15 11:16:02.179300 nusoap_xmlschema: <http://geo.ws.viamichelin.com> processing typed element latitude of type http://www.w3.org/2001/XMLSchema:double
+2010-06-15 11:16:02.179521 nusoap_xmlschema: <http://geo.ws.viamichelin.com> add element latitude to complexType GeoCoordinates
+2010-06-15 11:16:02.179786 nusoap_xmlschema: <http://geo.ws.viamichelin.com> done processing element latitude
+2010-06-15 11:16:02.180069 nusoap_xmlschema: <http://geo.ws.viamichelin.com> processing typed element longitude of type http://www.w3.org/2001/XMLSchema:double
+2010-06-15 11:16:02.180288 nusoap_xmlschema: <http://geo.ws.viamichelin.com> add element longitude to complexType GeoCoordinates
+2010-06-15 11:16:02.180526 nusoap_xmlschema: <http://geo.ws.viamichelin.com> done processing element longitude
+2010-06-15 11:16:02.180776 nusoap_xmlschema: <http://geo.ws.viamichelin.com> done processing complexType GeoCoordinates
+2010-06-15 11:16:02.181028 nusoap_xmlschema: <http://geo.ws.viamichelin.com> array(6) {
+  ["name"]=>
+  string(14) "GeoCoordinates"
+  ["typeClass"]=>
+  string(11) "complexType"
+  ["phpType"]=>
+  string(6) "struct"
+  ["simpleContent"]=>
+  string(5) "false"
+  ["compositor"]=>
+  string(8) "sequence"
+  ["elements"]=>
+  array(2) {
+    ["latitude"]=>
+    array(3) {
+      ["name"]=>
+      string(8) "latitude"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:double"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+    ["longitude"]=>
+    array(3) {
+      ["name"]=>
+      string(9) "longitude"
+      ["type"]=>
+      string(39) "http://www.w3.org/2001/XMLSchema:double"
+      ["form"]=>
+      string(11) "unqualified"
+    }
+  }
+}
+
+2010-06-15 11:16:02.181268 wsdl: Parsing WSDL schema done
+2010-06-15 11:16:02.181636 wsdl: msg getLocationsListResponse: found part (with type) getLocationsListReturn: getLocationsListReturn,http://service.localization.ws.viamichelin.com:ArrayOf_tns2_FindLocations
+2010-06-15 11:16:02.182025 wsdl: msg getLocationsListRequest: found part (with type) request: request,http://localization.ws.viamichelin.com:GeocodingRequest
+2010-06-15 11:16:02.182337 wsdl: msg getLocationsListRequest: found part (with type) check: check,http://www.w3.org/2001/XMLSchema:string
+2010-06-15 11:16:02.182717 wsdl: portType Geocoding operation: getLocationsList
+2010-06-15 11:16:02.183277 wsdl: current binding: GeocodingSoapBinding of portType: http://service.localization.ws.viamichelin.com:Geocoding
+2010-06-15 11:16:02.183638 wsdl: current binding operation: getLocationsList
+2010-06-15 11:16:02.184411 wsdl: current service: GeocodingService
+2010-06-15 11:16:02.184702 wsdl: current port: Geocoding
+2010-06-15 11:16:02.185070 wsdl: Parsing WSDL done
+2010-06-15 11:16:02.185336 wsdl: post-parse data gathering for getLocationsList
+";s:12:"charencoding";b:1;s:10:"debugLevel";i:9;s:16:"XMLSchemaVersion";s:32:"http://www.w3.org/2001/XMLSchema";s:16:"soap_defencoding";s:10:"ISO-8859-1";s:10:"namespaces";a:13:{s:8:"SOAP-ENV";s:41:"http://schemas.xmlsoap.org/soap/envelope/";s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:3:"xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:10:"apachesoap";s:30:"http://xml.apache.org/xml-soap";s:4:"impl";s:46:"http://service.localization.ws.viamichelin.com";s:4:"intf";s:46:"http://service.localization.ws.viamichelin.com";s:7:"soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"tns1";s:38:"http://localization.ws.viamichelin.com";s:4:"tns2";s:32:"http://object.ws.viamichelin.com";s:4:"tns3";s:29:"http://geo.ws.viamichelin.com";s:4:"wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";s:8:"wsdlsoap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";}s:14:"usedNamespaces";a:0:{}s:7:"typemap";a:6:{s:32:"http://www.w3.org/2001/XMLSchema";a:43:{s:6:"string";s:6:"string";s:7:"boolean";s:7:"boolean";s:5:"float";s:6:"double";s:6:"double";s:6:"double";s:7:"decimal";s:6:"double";s:8:"duration";s:0:"";s:8:"dateTime";s:6:"string";s:4:"time";s:6:"string";s:4:"date";s:6:"string";s:10:"gYearMonth";s:0:"";s:5:"gYear";s:0:"";s:9:"gMonthDay";s:0:"";s:4:"gDay";s:0:"";s:6:"gMonth";s:0:"";s:9:"hexBinary";s:6:"string";s:12:"base64Binary";s:6:"string";s:7:"anyType";s:6:"string";s:13:"anySimpleType";s:6:"string";s:16:"normalizedString";s:6:"string";s:5:"token";s:6:"string";s:8:"language";s:0:"";s:7:"NMTOKEN";s:0:"";s:8:"NMTOKENS";s:0:"";s:4:"Name";s:0:"";s:6:"NCName";s:0:"";s:2:"ID";s:0:"";s:5:"IDREF";s:0:"";s:6:"IDREFS";s:0:"";s:6:"ENTITY";s:0:"";s:8:"ENTITIES";s:0:"";s:7:"integer";s:7:"integer";s:18:"nonPositiveInteger";s:7:"integer";s:15:"negativeInteger";s:7:"integer";s:4:"long";s:7:"integer";s:3:"int";s:7:"integer";s:5:"short";s:7:"integer";s:4:"byte";s:7:"integer";s:18:"nonNegativeInteger";s:7:"integer";s:12:"unsignedLong";s:0:"";s:11:"unsignedInt";s:0:"";s:13:"unsignedShort";s:0:"";s:12:"unsignedByte";s:0:"";s:15:"positiveInteger";s:0:"";}s:35:"http://www.w3.org/2000/10/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:32:"http://www.w3.org/1999/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:26:"http://soapinterop.org/xsd";a:1:{s:10:"SOAPStruct";s:6:"struct";}s:41:"http://schemas.xmlsoap.org/soap/encoding/";a:3:{s:6:"base64";s:6:"string";s:5:"array";s:5:"array";s:5:"Array";s:5:"array";}s:30:"http://xml.apache.org/xml-soap";a:1:{i:0;s:3:"Map";}}s:11:"xmlEntities";a:5:{s:4:"quot";s:1:""";s:3:"amp";s:1:"&";s:2:"lt";s:1:"<";s:2:"gt";s:1:">";s:4:"apos";s:1:"'";}s:9:"wsdl_info";a:11:{s:15:"targetNamespace";s:46:"http://service.localization.ws.viamichelin.com";s:16:"xmlns:apachesoap";s:30:"http://xml.apache.org/xml-soap";s:10:"xmlns:impl";s:46:"http://service.localization.ws.viamichelin.com";s:10:"xmlns:intf";s:46:"http://service.localization.ws.viamichelin.com";s:13:"xmlns:soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:10:"xmlns:tns1";s:38:"http://localization.ws.viamichelin.com";s:10:"xmlns:tns2";s:32:"http://object.ws.viamichelin.com";s:10:"xmlns:tns3";s:29:"http://geo.ws.viamichelin.com";s:10:"xmlns:wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";s:14:"xmlns:wsdlsoap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";s:9:"xmlns:xsd";s:32:"http://www.w3.org/2001/XMLSchema";}s:20:"currentPortOperation";s:16:"getLocationsList";s:8:"opStatus";s:6:"output";s:11:"serviceName";s:16:"GeocodingService";}
